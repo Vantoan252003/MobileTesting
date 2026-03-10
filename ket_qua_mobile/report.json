@@ -1,0 +1,5197 @@
+{
+  "url": "https://hcmunre.edu.vn",
+  "timestamp": "2026-03-03T10:41:32.950615",
+  "avg_score": 62.0,
+  "devices": [
+    {
+      "device": "iPhone SE (2022)",
+      "device_id": "iphone_se",
+      "width": 375,
+      "height": 667,
+      "url": "https://hcmunre.edu.vn",
+      "timestamp": "2026-03-03T10:41:37.295237",
+      "error": null,
+      "viewport_meta": {
+        "exists": true,
+        "content": "width=device-width, initial-scale=1.0",
+        "width_device": true,
+        "initial_scale_1": true,
+        "ok": true
+      },
+      "performance": {
+        "connect": 106,
+        "dns": 10,
+        "dom_parse": 2380,
+        "dom_ready": 3492,
+        "download": 1,
+        "load_total": 6388,
+        "ttfb": 943,
+        "rating": "Chậm",
+        "rating_color": "red"
+      },
+      "overflow": {
+        "overflow": false,
+        "scroll_height": 6995,
+        "scroll_width": 500,
+        "viewport_height": 528,
+        "viewport_width": 500,
+        "offenders": []
+      },
+      "image_overflow": [],
+      "font_issues": [
+        {
+          "tag": "p",
+          "font_size": 11.256,
+          "text": "Là trường đại học công lập duy nhất phía Nam trực "
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        }
+      ],
+      "tap_targets": [
+        {
+          "selector": "a",
+          "label": "VI",
+          "width": 11,
+          "height": 13
+        },
+        {
+          "selector": "a",
+          "label": "EN",
+          "width": 14,
+          "height": 13
+        },
+        {
+          "selector": "a",
+          "label": "Hội nghị triển khai nhiệm vụ năm 2026",
+          "width": 299,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "Hội nghị Đại biểu Viên chức, Người lao động năm 20",
+          "width": 450,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "Xem tất cả   ",
+          "width": 119,
+          "height": 43
+        },
+        {
+          "selector": "a",
+          "label": "THÔNG TIN TUYỂN SINH ĐẠI HỌC CHÍNH QUY NĂM 2025",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "V/v chiêu sinh khóa đào tạo, bồi dưỡng nghiệp vụ v",
+          "width": 422,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "Thông báo Tuyển sinh đào tạo trình độ Thạc sĩ Khóa",
+          "width": 422,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "Giới thiệu đào tạo sau đại học",
+          "width": 422,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "V/v chiêu sinh các lớp đào tạo lái xe.",
+          "width": 422,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "Thông báo V/v chiêu sinh các lớp đào tạo lái xe.",
+          "width": 422,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "THÔNG TIN TUYỂN SINH ĐẠI HỌC CHÍNH QUY NĂM 2025",
+          "width": 422,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "Xem tất cả   ",
+          "width": 119,
+          "height": 43
+        },
+        {
+          "selector": "a",
+          "label": "Xem tất cả   ",
+          "width": 119,
+          "height": 43
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 51,
+          "height": 14
+        },
+        {
+          "selector": "a",
+          "label": "CÔNG ĐOÀN",
+          "width": 68,
+          "height": 14
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 123,
+          "height": 14
+        },
+        {
+          "selector": "a",
+          "label": "Xem tất cả   ",
+          "width": 119,
+          "height": 43
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 41,
+          "height": 40
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 41,
+          "height": 40
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 41,
+          "height": 40
+        },
+        {
+          "selector": "a",
+          "label": "Về HCMUNRE",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Tin Tức",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Tuyển Sinh",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Liên hệ",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Thông tin tuyển sinh",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Nghiên cứu khoa học",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Ngành nghề đào tạo",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Cồng thông tin đào tạo",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "PHÒNG",
+          "width": 39,
+          "height": 13
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Đào tạo",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Công tác sinh viên",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Khảo thí và Đảm bảo chất lượng",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Khoa học Công nghệ và Quan hệ Đối ngoại",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Quản trị cơ sở vật chất",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Kế hoạch – Tài chính",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Tổ chức - Hành chính",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "KHOA/BỘ MÔN",
+          "width": 78,
+          "height": 13
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Môi trường",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Quản lý đất đai",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Trắc địa, Bản đồ và Công trình",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Khí tượng, thủy văn & tài nguyên nước",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Bộ môn Tài nguyên nước",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Địa chất & Khoáng sản",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Kinh tế",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Công nghệ thông tin",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Quản lý Tài nguyên Biển và Hải đảo",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Khoa học ứng dụng",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Luật, Lý luận chính trị và Giáo dục thể chất ",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Bộ môn Giáo dục Thể chất và Giáo dục Quốc phòng",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "CÁC TỔ CHỨC KHOA HỌC CÔNG NGHỆ & DỊCH VỤ",
+          "width": 255,
+          "height": 13
+        },
+        {
+          "selector": "a",
+          "label": "Trung tâm giáo dục thường xuyên",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Trung tâm Ngoại ngữ, Tin học, Dịch vụ nông nghiệp ",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Trung tâm Ngoại ngữ - Tin học",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Trung tâm Dữ liệu, Truyền thông & Thư viện",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Viện nghiên cứu và phát triển bền vững",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 53,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 74,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 40,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 58,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 45,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 79,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 56,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 110,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 48,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 72,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 69,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 62,
+          "height": 18
+        },
+        {
+          "selector": "button",
+          "label": "",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "selector": "button",
+          "label": "",
+          "width": 30,
+          "height": 29
+        }
+      ],
+      "navigation": {
+        "found": true,
+        "clickable": true,
+        "menu_appeared": true,
+        "selector": "button[class*='mobile']"
+      },
+      "form_issues": [],
+      "console_errors": [
+        {
+          "level": "SEVERE",
+          "message": "https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-631c08b0a7635ef7 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED"
+        },
+        {
+          "level": "SEVERE",
+          "message": "https://hcmunre.edu.vn/thumbs/819x550x1/upload/news/ - Failed to load resource: the server responded with a status of 403 ()"
+        },
+        {
+          "level": "SEVERE",
+          "message": "https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61149fea61596b42 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED"
+        },
+        {
+          "level": "SEVERE",
+          "message": "https://embed.tawk.to/64464f8e4247f20fefed63fb/1gupadhud - Failed to load resource: the server responded with a status of 404 ()"
+        },
+        {
+          "level": "SEVERE",
+          "message": "https://hcmunre.edu.vn/thumbs/819x550x1/upload/news/ - Failed to load resource: the server responded with a status of 403 ()"
+        }
+      ],
+      "accessibility": [
+        {
+          "type": "input_missing_label",
+          "detail": "input id=''"
+        }
+      ],
+      "scroll": {
+        "scroll_height": 6995,
+        "scroll_width": 500,
+        "viewport_height": 528,
+        "viewport_width": 500,
+        "page_ratio": 13.2
+      },
+      "score_deductions": [
+        "71 tap target nhỏ (-15)",
+        "Tải trung bình 6388ms (-8)",
+        "5 lỗi console (-10)",
+        "61 font nhỏ (-5)"
+      ],
+      "score": 62
+    },
+    {
+      "device": "iPhone 14 Pro",
+      "device_id": "iphone_14_pro",
+      "width": 393,
+      "height": 852,
+      "url": "https://hcmunre.edu.vn",
+      "timestamp": "2026-03-03T10:41:51.145060",
+      "error": null,
+      "viewport_meta": {
+        "exists": true,
+        "content": "width=device-width, initial-scale=1.0",
+        "width_device": true,
+        "initial_scale_1": true,
+        "ok": true
+      },
+      "performance": {
+        "connect": 29,
+        "dns": 34,
+        "dom_parse": 5791,
+        "dom_ready": 5987,
+        "download": 1,
+        "load_total": 8887,
+        "ttfb": 82,
+        "rating": "Chậm",
+        "rating_color": "red"
+      },
+      "overflow": {
+        "overflow": false,
+        "scroll_height": 6995,
+        "scroll_width": 500,
+        "viewport_height": 713,
+        "viewport_width": 500,
+        "offenders": []
+      },
+      "image_overflow": [],
+      "font_issues": [
+        {
+          "tag": "p",
+          "font_size": 11.256,
+          "text": "Là trường đại học công lập duy nhất phía Nam trực "
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        }
+      ],
+      "tap_targets": [
+        {
+          "selector": "a",
+          "label": "VI",
+          "width": 11,
+          "height": 13
+        },
+        {
+          "selector": "a",
+          "label": "EN",
+          "width": 14,
+          "height": 13
+        },
+        {
+          "selector": "a",
+          "label": "Hội nghị triển khai nhiệm vụ năm 2026",
+          "width": 299,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "Hội nghị Đại biểu Viên chức, Người lao động năm 20",
+          "width": 450,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "Xem tất cả   ",
+          "width": 119,
+          "height": 43
+        },
+        {
+          "selector": "a",
+          "label": "THÔNG TIN TUYỂN SINH ĐẠI HỌC CHÍNH QUY NĂM 2025",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "V/v chiêu sinh khóa đào tạo, bồi dưỡng nghiệp vụ v",
+          "width": 422,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "Thông báo Tuyển sinh đào tạo trình độ Thạc sĩ Khóa",
+          "width": 422,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "Giới thiệu đào tạo sau đại học",
+          "width": 422,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "V/v chiêu sinh các lớp đào tạo lái xe.",
+          "width": 422,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "Thông báo V/v chiêu sinh các lớp đào tạo lái xe.",
+          "width": 422,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "THÔNG TIN TUYỂN SINH ĐẠI HỌC CHÍNH QUY NĂM 2025",
+          "width": 422,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "Xem tất cả   ",
+          "width": 119,
+          "height": 43
+        },
+        {
+          "selector": "a",
+          "label": "Xem tất cả   ",
+          "width": 119,
+          "height": 43
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 51,
+          "height": 14
+        },
+        {
+          "selector": "a",
+          "label": "CÔNG ĐOÀN",
+          "width": 68,
+          "height": 14
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 123,
+          "height": 14
+        },
+        {
+          "selector": "a",
+          "label": "Xem tất cả   ",
+          "width": 119,
+          "height": 43
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 41,
+          "height": 40
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 41,
+          "height": 40
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 41,
+          "height": 40
+        },
+        {
+          "selector": "a",
+          "label": "Về HCMUNRE",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Tin Tức",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Tuyển Sinh",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Liên hệ",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Thông tin tuyển sinh",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Nghiên cứu khoa học",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Ngành nghề đào tạo",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Cồng thông tin đào tạo",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "PHÒNG",
+          "width": 39,
+          "height": 13
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Đào tạo",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Công tác sinh viên",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Khảo thí và Đảm bảo chất lượng",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Khoa học Công nghệ và Quan hệ Đối ngoại",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Quản trị cơ sở vật chất",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Kế hoạch – Tài chính",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Tổ chức - Hành chính",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "KHOA/BỘ MÔN",
+          "width": 78,
+          "height": 13
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Môi trường",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Quản lý đất đai",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Trắc địa, Bản đồ và Công trình",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Khí tượng, thủy văn & tài nguyên nước",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Bộ môn Tài nguyên nước",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Địa chất & Khoáng sản",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Kinh tế",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Công nghệ thông tin",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Quản lý Tài nguyên Biển và Hải đảo",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Khoa học ứng dụng",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Luật, Lý luận chính trị và Giáo dục thể chất ",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Bộ môn Giáo dục Thể chất và Giáo dục Quốc phòng",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "CÁC TỔ CHỨC KHOA HỌC CÔNG NGHỆ & DỊCH VỤ",
+          "width": 255,
+          "height": 13
+        },
+        {
+          "selector": "a",
+          "label": "Trung tâm giáo dục thường xuyên",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Trung tâm Ngoại ngữ, Tin học, Dịch vụ nông nghiệp ",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Trung tâm Ngoại ngữ - Tin học",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Trung tâm Dữ liệu, Truyền thông & Thư viện",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Viện nghiên cứu và phát triển bền vững",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 53,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 74,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 40,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 58,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 45,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 79,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 56,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 110,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 48,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 72,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 69,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 62,
+          "height": 18
+        },
+        {
+          "selector": "button",
+          "label": "",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "selector": "button",
+          "label": "",
+          "width": 30,
+          "height": 29
+        }
+      ],
+      "navigation": {
+        "found": true,
+        "clickable": true,
+        "menu_appeared": true,
+        "selector": "button[class*='mobile']"
+      },
+      "form_issues": [],
+      "console_errors": [
+        {
+          "level": "SEVERE",
+          "message": "https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-631c08b0a7635ef7 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED"
+        },
+        {
+          "level": "SEVERE",
+          "message": "https://hcmunre.edu.vn/thumbs/819x550x1/upload/news/ - Failed to load resource: the server responded with a status of 403 ()"
+        },
+        {
+          "level": "SEVERE",
+          "message": "https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61149fea61596b42 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED"
+        },
+        {
+          "level": "SEVERE",
+          "message": "https://hcmunre.edu.vn/thumbs/819x550x1/upload/news/ - Failed to load resource: the server responded with a status of 403 ()"
+        },
+        {
+          "level": "SEVERE",
+          "message": "https://embed.tawk.to/64464f8e4247f20fefed63fb/1gupadhud - Failed to load resource: the server responded with a status of 404 ()"
+        }
+      ],
+      "accessibility": [
+        {
+          "type": "input_missing_label",
+          "detail": "input id=''"
+        }
+      ],
+      "scroll": {
+        "scroll_height": 6995,
+        "scroll_width": 500,
+        "viewport_height": 713,
+        "viewport_width": 500,
+        "page_ratio": 9.8
+      },
+      "score_deductions": [
+        "71 tap target nhỏ (-15)",
+        "Tải chậm 8887ms (-15)",
+        "5 lỗi console (-10)",
+        "61 font nhỏ (-5)"
+      ],
+      "score": 55
+    },
+    {
+      "device": "Samsung Galaxy S21",
+      "device_id": "samsung_s21",
+      "width": 360,
+      "height": 800,
+      "url": "https://hcmunre.edu.vn",
+      "timestamp": "2026-03-03T10:42:07.436259",
+      "error": null,
+      "viewport_meta": {
+        "exists": true,
+        "content": "width=device-width, initial-scale=1.0",
+        "width_device": true,
+        "initial_scale_1": true,
+        "ok": true
+      },
+      "performance": {
+        "connect": 32,
+        "dns": 3,
+        "dom_parse": 1694,
+        "dom_ready": 2355,
+        "download": 2,
+        "load_total": 20264,
+        "ttfb": 571,
+        "rating": "Chậm",
+        "rating_color": "red"
+      },
+      "overflow": {
+        "overflow": false,
+        "scroll_height": 6995,
+        "scroll_width": 500,
+        "viewport_height": 661,
+        "viewport_width": 500,
+        "offenders": []
+      },
+      "image_overflow": [],
+      "font_issues": [
+        {
+          "tag": "p",
+          "font_size": 11.256,
+          "text": "Là trường đại học công lập duy nhất phía Nam trực "
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        }
+      ],
+      "tap_targets": [
+        {
+          "selector": "a",
+          "label": "VI",
+          "width": 11,
+          "height": 13
+        },
+        {
+          "selector": "a",
+          "label": "EN",
+          "width": 14,
+          "height": 13
+        },
+        {
+          "selector": "a",
+          "label": "Hội nghị triển khai nhiệm vụ năm 2026",
+          "width": 299,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "Hội nghị Đại biểu Viên chức, Người lao động năm 20",
+          "width": 450,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "Xem tất cả   ",
+          "width": 119,
+          "height": 43
+        },
+        {
+          "selector": "a",
+          "label": "THÔNG TIN TUYỂN SINH ĐẠI HỌC CHÍNH QUY NĂM 2025",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "V/v chiêu sinh khóa đào tạo, bồi dưỡng nghiệp vụ v",
+          "width": 422,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "Thông báo Tuyển sinh đào tạo trình độ Thạc sĩ Khóa",
+          "width": 422,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "Giới thiệu đào tạo sau đại học",
+          "width": 422,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "V/v chiêu sinh các lớp đào tạo lái xe.",
+          "width": 422,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "Thông báo V/v chiêu sinh các lớp đào tạo lái xe.",
+          "width": 422,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "THÔNG TIN TUYỂN SINH ĐẠI HỌC CHÍNH QUY NĂM 2025",
+          "width": 422,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "Xem tất cả   ",
+          "width": 119,
+          "height": 43
+        },
+        {
+          "selector": "a",
+          "label": "Xem tất cả   ",
+          "width": 119,
+          "height": 43
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 51,
+          "height": 14
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 68,
+          "height": 14
+        },
+        {
+          "selector": "a",
+          "label": "ĐOÀN - HỘI SINH VIÊN",
+          "width": 123,
+          "height": 14
+        },
+        {
+          "selector": "a",
+          "label": "Xem tất cả   ",
+          "width": 119,
+          "height": 43
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 41,
+          "height": 40
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 41,
+          "height": 40
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 41,
+          "height": 40
+        },
+        {
+          "selector": "a",
+          "label": "Về HCMUNRE",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Tin Tức",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Tuyển Sinh",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Liên hệ",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Thông tin tuyển sinh",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Nghiên cứu khoa học",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Ngành nghề đào tạo",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Cồng thông tin đào tạo",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "PHÒNG",
+          "width": 39,
+          "height": 13
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Đào tạo",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Công tác sinh viên",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Khảo thí và Đảm bảo chất lượng",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Khoa học Công nghệ và Quan hệ Đối ngoại",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Quản trị cơ sở vật chất",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Kế hoạch – Tài chính",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Tổ chức - Hành chính",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "KHOA/BỘ MÔN",
+          "width": 78,
+          "height": 13
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Môi trường",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Quản lý đất đai",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Trắc địa, Bản đồ và Công trình",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Khí tượng, thủy văn & tài nguyên nước",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Bộ môn Tài nguyên nước",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Địa chất & Khoáng sản",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Kinh tế",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Công nghệ thông tin",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Quản lý Tài nguyên Biển và Hải đảo",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Khoa học ứng dụng",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Luật, Lý luận chính trị và Giáo dục thể chất ",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Bộ môn Giáo dục Thể chất và Giáo dục Quốc phòng",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "CÁC TỔ CHỨC KHOA HỌC CÔNG NGHỆ & DỊCH VỤ",
+          "width": 255,
+          "height": 13
+        },
+        {
+          "selector": "a",
+          "label": "Trung tâm giáo dục thường xuyên",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Trung tâm Ngoại ngữ, Tin học, Dịch vụ nông nghiệp ",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Trung tâm Ngoại ngữ - Tin học",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Trung tâm Dữ liệu, Truyền thông & Thư viện",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Viện nghiên cứu và phát triển bền vững",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 53,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 74,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 40,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 58,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 45,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 79,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 56,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 110,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 48,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 72,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 69,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 62,
+          "height": 18
+        },
+        {
+          "selector": "button",
+          "label": "",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "selector": "button",
+          "label": "",
+          "width": 30,
+          "height": 29
+        }
+      ],
+      "navigation": {
+        "found": true,
+        "clickable": true,
+        "menu_appeared": true,
+        "selector": "button[class*='mobile']"
+      },
+      "form_issues": [],
+      "console_errors": [
+        {
+          "level": "SEVERE",
+          "message": "https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-631c08b0a7635ef7 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED"
+        },
+        {
+          "level": "SEVERE",
+          "message": "https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61149fea61596b42 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED"
+        },
+        {
+          "level": "SEVERE",
+          "message": "https://hcmunre.edu.vn/thumbs/819x550x1/upload/news/ - Failed to load resource: the server responded with a status of 403 ()"
+        },
+        {
+          "level": "SEVERE",
+          "message": "https://embed.tawk.to/64464f8e4247f20fefed63fb/1gupadhud - Failed to load resource: the server responded with a status of 404 ()"
+        }
+      ],
+      "accessibility": [
+        {
+          "type": "input_missing_label",
+          "detail": "input id=''"
+        }
+      ],
+      "scroll": {
+        "scroll_height": 6995,
+        "scroll_width": 500,
+        "viewport_height": 661,
+        "viewport_width": 500,
+        "page_ratio": 10.6
+      },
+      "score_deductions": [
+        "71 tap target nhỏ (-15)",
+        "Tải chậm 20264ms (-15)",
+        "4 lỗi console (-8)",
+        "61 font nhỏ (-5)"
+      ],
+      "score": 57
+    },
+    {
+      "device": "Google Pixel 7",
+      "device_id": "pixel_7",
+      "width": 412,
+      "height": 915,
+      "url": "https://hcmunre.edu.vn",
+      "timestamp": "2026-03-03T10:42:35.267378",
+      "error": null,
+      "viewport_meta": {
+        "exists": true,
+        "content": "width=device-width, initial-scale=1.0",
+        "width_device": true,
+        "initial_scale_1": true,
+        "ok": true
+      },
+      "performance": {
+        "connect": 32,
+        "dns": 10,
+        "dom_parse": 940,
+        "dom_ready": 1430,
+        "download": 0,
+        "load_total": 4481,
+        "ttfb": 391,
+        "rating": "Trung bình",
+        "rating_color": "orange"
+      },
+      "overflow": {
+        "overflow": false,
+        "scroll_height": 6995,
+        "scroll_width": 500,
+        "viewport_height": 776,
+        "viewport_width": 500,
+        "offenders": []
+      },
+      "image_overflow": [],
+      "font_issues": [
+        {
+          "tag": "p",
+          "font_size": 11.256,
+          "text": "Là trường đại học công lập duy nhất phía Nam trực "
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        }
+      ],
+      "tap_targets": [
+        {
+          "selector": "a",
+          "label": "VI",
+          "width": 11,
+          "height": 13
+        },
+        {
+          "selector": "a",
+          "label": "EN",
+          "width": 14,
+          "height": 13
+        },
+        {
+          "selector": "a",
+          "label": "Hội nghị triển khai nhiệm vụ năm 2026",
+          "width": 299,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "Hội nghị Đại biểu Viên chức, Người lao động năm 20",
+          "width": 450,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "Xem tất cả   ",
+          "width": 119,
+          "height": 43
+        },
+        {
+          "selector": "a",
+          "label": "THÔNG TIN TUYỂN SINH ĐẠI HỌC CHÍNH QUY NĂM 2025",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "V/v chiêu sinh khóa đào tạo, bồi dưỡng nghiệp vụ v",
+          "width": 422,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "Thông báo Tuyển sinh đào tạo trình độ Thạc sĩ Khóa",
+          "width": 422,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "Giới thiệu đào tạo sau đại học",
+          "width": 422,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "V/v chiêu sinh các lớp đào tạo lái xe.",
+          "width": 422,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "Thông báo V/v chiêu sinh các lớp đào tạo lái xe.",
+          "width": 422,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "THÔNG TIN TUYỂN SINH ĐẠI HỌC CHÍNH QUY NĂM 2025",
+          "width": 422,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "Xem tất cả   ",
+          "width": 119,
+          "height": 43
+        },
+        {
+          "selector": "a",
+          "label": "Xem tất cả   ",
+          "width": 119,
+          "height": 43
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 51,
+          "height": 14
+        },
+        {
+          "selector": "a",
+          "label": "CÔNG ĐOÀN",
+          "width": 68,
+          "height": 14
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 123,
+          "height": 14
+        },
+        {
+          "selector": "a",
+          "label": "Xem tất cả   ",
+          "width": 119,
+          "height": 43
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 41,
+          "height": 40
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 41,
+          "height": 40
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 41,
+          "height": 40
+        },
+        {
+          "selector": "a",
+          "label": "Về HCMUNRE",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Tin Tức",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Tuyển Sinh",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Liên hệ",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Thông tin tuyển sinh",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Nghiên cứu khoa học",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Ngành nghề đào tạo",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Cồng thông tin đào tạo",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "PHÒNG",
+          "width": 39,
+          "height": 13
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Đào tạo",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Công tác sinh viên",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Khảo thí và Đảm bảo chất lượng",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Khoa học Công nghệ và Quan hệ Đối ngoại",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Quản trị cơ sở vật chất",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Kế hoạch – Tài chính",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Tổ chức - Hành chính",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "KHOA/BỘ MÔN",
+          "width": 78,
+          "height": 13
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Môi trường",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Quản lý đất đai",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Trắc địa, Bản đồ và Công trình",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Khí tượng, thủy văn & tài nguyên nước",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Bộ môn Tài nguyên nước",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Địa chất & Khoáng sản",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Kinh tế",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Công nghệ thông tin",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Quản lý Tài nguyên Biển và Hải đảo",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Khoa học ứng dụng",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Luật, Lý luận chính trị và Giáo dục thể chất ",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Bộ môn Giáo dục Thể chất và Giáo dục Quốc phòng",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "CÁC TỔ CHỨC KHOA HỌC CÔNG NGHỆ & DỊCH VỤ",
+          "width": 255,
+          "height": 13
+        },
+        {
+          "selector": "a",
+          "label": "Trung tâm giáo dục thường xuyên",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Trung tâm Ngoại ngữ, Tin học, Dịch vụ nông nghiệp ",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Trung tâm Ngoại ngữ - Tin học",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Trung tâm Dữ liệu, Truyền thông & Thư viện",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Viện nghiên cứu và phát triển bền vững",
+          "width": 470,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 53,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 74,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 40,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 58,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 45,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 79,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 56,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 110,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 48,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 72,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 69,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 62,
+          "height": 18
+        },
+        {
+          "selector": "button",
+          "label": "",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "selector": "button",
+          "label": "",
+          "width": 30,
+          "height": 29
+        }
+      ],
+      "navigation": {
+        "found": true,
+        "clickable": true,
+        "menu_appeared": true,
+        "selector": "button[class*='mobile']"
+      },
+      "form_issues": [],
+      "console_errors": [
+        {
+          "level": "SEVERE",
+          "message": "https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-631c08b0a7635ef7 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED"
+        },
+        {
+          "level": "SEVERE",
+          "message": "https://hcmunre.edu.vn/thumbs/819x550x1/upload/news/ - Failed to load resource: the server responded with a status of 403 ()"
+        },
+        {
+          "level": "SEVERE",
+          "message": "https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61149fea61596b42 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED"
+        },
+        {
+          "level": "SEVERE",
+          "message": "https://embed.tawk.to/64464f8e4247f20fefed63fb/1gupadhud - Failed to load resource: the server responded with a status of 404 ()"
+        },
+        {
+          "level": "SEVERE",
+          "message": "https://hcmunre.edu.vn/thumbs/819x550x1/upload/news/ - Failed to load resource: the server responded with a status of 403 ()"
+        }
+      ],
+      "accessibility": [
+        {
+          "type": "input_missing_label",
+          "detail": "input id=''"
+        }
+      ],
+      "scroll": {
+        "scroll_height": 6995,
+        "scroll_width": 500,
+        "viewport_height": 776,
+        "viewport_width": 500,
+        "page_ratio": 9.0
+      },
+      "score_deductions": [
+        "71 tap target nhỏ (-15)",
+        "Tải trung bình 4481ms (-8)",
+        "5 lỗi console (-10)",
+        "61 font nhỏ (-5)"
+      ],
+      "score": 62
+    },
+    {
+      "device": "iPad Mini (6th gen)",
+      "device_id": "ipad_mini",
+      "width": 768,
+      "height": 1024,
+      "url": "https://hcmunre.edu.vn",
+      "timestamp": "2026-03-03T10:42:46.945287",
+      "error": null,
+      "viewport_meta": {
+        "exists": true,
+        "content": "width=device-width, initial-scale=1.0",
+        "width_device": true,
+        "initial_scale_1": true,
+        "ok": true
+      },
+      "performance": {
+        "connect": 36,
+        "dns": 124,
+        "dom_parse": 690,
+        "dom_ready": 1296,
+        "download": 1,
+        "load_total": 4951,
+        "ttfb": 402,
+        "rating": "Trung bình",
+        "rating_color": "orange"
+      },
+      "overflow": {
+        "overflow": false,
+        "scroll_height": 5717,
+        "scroll_width": 768,
+        "viewport_height": 885,
+        "viewport_width": 768,
+        "offenders": []
+      },
+      "image_overflow": [],
+      "font_issues": [
+        {
+          "tag": "p",
+          "font_size": 11.256,
+          "text": "Là trường đại học công lập duy nhất phía Nam trực "
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "li",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "span",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "font_size": 11.256,
+          "text": ""
+        }
+      ],
+      "tap_targets": [
+        {
+          "selector": "a",
+          "label": "VI",
+          "width": 11,
+          "height": 13
+        },
+        {
+          "selector": "a",
+          "label": "EN",
+          "width": 14,
+          "height": 13
+        },
+        {
+          "selector": "a",
+          "label": "Khai giảng khóa Đào tạo Nghiệp vụ bảo vệ môi trườn",
+          "width": 718,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "Hội nghị triển khai nhiệm vụ năm 2026",
+          "width": 567,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "Lễ ký kết biên bản ghi nhớ (MOU) với Trường Đại Họ",
+          "width": 603,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "Buổi đón tiếp và làm việc với đoàn công tác từ tỉn",
+          "width": 603,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "HỘI NGHỊ TỔNG KẾT CÔNG TÁC NĂM 2025 VÀ PHƯƠNG HƯỚN",
+          "width": 603,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "Xem tất cả   ",
+          "width": 119,
+          "height": 43
+        },
+        {
+          "selector": "a",
+          "label": "THÔNG TIN TUYỂN SINH ĐẠI HỌC CHÍNH QUY NĂM 2025",
+          "width": 762,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 762,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "T3. Thông báo về việc chiêu sinh các khoá đào tạo ",
+          "width": 714,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "V/v chiêu sinh khóa đào tạo, bồi dưỡng nghiệp vụ v",
+          "width": 714,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "T2. V/v chiêu sinh các lớp bồi dưỡng theo tiêu chu",
+          "width": 714,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "V/v chiêu sinh các lớp bồi dưỡng kiến thức hành ng",
+          "width": 714,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "Thông báo chiêu sinh lớp nghiệp vụ bảo vệ môi trườ",
+          "width": 714,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "Thông báo Tuyển sinh đào tạo trình độ Thạc sĩ Khóa",
+          "width": 714,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "Giới thiệu đào tạo sau đại học",
+          "width": 714,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "Thông báo V/v chiêu sinh khoá ôn thi sát hạch chứn",
+          "width": 714,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "2026 V/v chiêu sinh lớp nghiệp vụ bảo vệ môi trườn",
+          "width": 714,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "2026 V/v chiêu sinh các lớp bồi dưỡng theo tiêu ch",
+          "width": 714,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "2026 V/v chiêu sinh các lớp bồi dưỡng kiến thức hà",
+          "width": 714,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "V/v chiêu sinh các lớp đào tạo lái xe.",
+          "width": 714,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "Thông báo V/v chiêu sinh các lớp đào tạo lái xe.",
+          "width": 714,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "THÔNG TIN TUYỂN SINH ĐẠI HỌC CHÍNH QUY NĂM 2025",
+          "width": 714,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "Xem tất cả   ",
+          "width": 119,
+          "height": 43
+        },
+        {
+          "selector": "a",
+          "label": "Xem tất cả   ",
+          "width": 119,
+          "height": 43
+        },
+        {
+          "selector": "a",
+          "label": "ĐẢNG ỦY",
+          "width": 51,
+          "height": 14
+        },
+        {
+          "selector": "a",
+          "label": "CÔNG ĐOÀN",
+          "width": 68,
+          "height": 14
+        },
+        {
+          "selector": "a",
+          "label": "ĐOÀN - HỘI SINH VIÊN",
+          "width": 123,
+          "height": 14
+        },
+        {
+          "selector": "a",
+          "label": "Xem tất cả   ",
+          "width": 119,
+          "height": 43
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 40,
+          "height": 50
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 40,
+          "height": 50
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 40,
+          "height": 50
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 40,
+          "height": 50
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 40,
+          "height": 50
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 40,
+          "height": 50
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 40,
+          "height": 50
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 41,
+          "height": 40
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 41,
+          "height": 40
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 41,
+          "height": 40
+        },
+        {
+          "selector": "a",
+          "label": "Về HCMUNRE",
+          "width": 176,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Tin Tức",
+          "width": 176,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Tuyển Sinh",
+          "width": 176,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Liên hệ",
+          "width": 176,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Thông tin tuyển sinh",
+          "width": 176,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Nghiên cứu khoa học",
+          "width": 176,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Ngành nghề đào tạo",
+          "width": 176,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Cồng thông tin đào tạo",
+          "width": 176,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "PHÒNG",
+          "width": 39,
+          "height": 13
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Đào tạo",
+          "width": 176,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Công tác sinh viên",
+          "width": 176,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Khảo thí và Đảm bảo chất lượng",
+          "width": 176,
+          "height": 34
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Khoa học Công nghệ và Quan hệ Đối ngoại",
+          "width": 176,
+          "height": 34
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Quản trị cơ sở vật chất",
+          "width": 176,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Kế hoạch – Tài chính",
+          "width": 176,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Tổ chức - Hành chính",
+          "width": 176,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "KHOA/BỘ MÔN",
+          "width": 78,
+          "height": 13
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Môi trường",
+          "width": 176,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Quản lý đất đai",
+          "width": 176,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Trắc địa, Bản đồ và Công trình",
+          "width": 176,
+          "height": 34
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Khí tượng, thủy văn & tài nguyên nước",
+          "width": 176,
+          "height": 34
+        },
+        {
+          "selector": "a",
+          "label": "Bộ môn Tài nguyên nước",
+          "width": 176,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Địa chất & Khoáng sản",
+          "width": 176,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Kinh tế",
+          "width": 176,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Công nghệ thông tin",
+          "width": 176,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Quản lý Tài nguyên Biển và Hải đảo",
+          "width": 176,
+          "height": 34
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Khoa học ứng dụng",
+          "width": 176,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Luật, Lý luận chính trị và Giáo dục thể chất ",
+          "width": 176,
+          "height": 34
+        },
+        {
+          "selector": "a",
+          "label": "Bộ môn Giáo dục Thể chất và Giáo dục Quốc phòng",
+          "width": 176,
+          "height": 34
+        },
+        {
+          "selector": "a",
+          "label": "CÁC TỔ CHỨC KHOA HỌC CÔNG NGHỆ & DỊCH VỤ",
+          "width": 165,
+          "height": 37
+        },
+        {
+          "selector": "a",
+          "label": "Trung tâm giáo dục thường xuyên",
+          "width": 176,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Trung tâm Ngoại ngữ, Tin học, Dịch vụ nông nghiệp ",
+          "width": 176,
+          "height": 34
+        },
+        {
+          "selector": "a",
+          "label": "Trung tâm Ngoại ngữ - Tin học",
+          "width": 176,
+          "height": 17
+        },
+        {
+          "selector": "a",
+          "label": "Trung tâm Dữ liệu, Truyền thông & Thư viện",
+          "width": 176,
+          "height": 34
+        },
+        {
+          "selector": "a",
+          "label": "Viện nghiên cứu và phát triển bền vững",
+          "width": 176,
+          "height": 34
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 53,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 74,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 40,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 58,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 45,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 79,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 56,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 110,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 48,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 72,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 69,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 62,
+          "height": 18
+        },
+        {
+          "selector": "button",
+          "label": "",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "selector": "button",
+          "label": "",
+          "width": 30,
+          "height": 29
+        }
+      ],
+      "navigation": {
+        "found": true,
+        "clickable": true,
+        "menu_appeared": true,
+        "selector": "button[class*='mobile']"
+      },
+      "form_issues": [],
+      "console_errors": [
+        {
+          "level": "SEVERE",
+          "message": "https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-631c08b0a7635ef7 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED"
+        },
+        {
+          "level": "SEVERE",
+          "message": "https://hcmunre.edu.vn/thumbs/819x550x1/upload/news/ - Failed to load resource: the server responded with a status of 403 ()"
+        },
+        {
+          "level": "SEVERE",
+          "message": "https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61149fea61596b42 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED"
+        },
+        {
+          "level": "SEVERE",
+          "message": "https://hcmunre.edu.vn/thumbs/819x550x1/upload/news/ - Failed to load resource: the server responded with a status of 403 ()"
+        },
+        {
+          "level": "SEVERE",
+          "message": "https://embed.tawk.to/64464f8e4247f20fefed63fb/1gupadhud - Failed to load resource: the server responded with a status of 404 ()"
+        }
+      ],
+      "accessibility": [
+        {
+          "type": "input_missing_label",
+          "detail": "input id=''"
+        }
+      ],
+      "scroll": {
+        "scroll_height": 5717,
+        "scroll_width": 768,
+        "viewport_height": 885,
+        "viewport_width": 768,
+        "page_ratio": 6.5
+      },
+      "score_deductions": [
+        "89 tap target nhỏ (-15)",
+        "Tải trung bình 4951ms (-8)",
+        "5 lỗi console (-10)",
+        "61 font nhỏ (-5)"
+      ],
+      "score": 62
+    },
+    {
+      "device": "iPad Pro 11\"",
+      "device_id": "ipad_pro",
+      "width": 834,
+      "height": 1194,
+      "url": "https://hcmunre.edu.vn",
+      "timestamp": "2026-03-03T10:42:59.329519",
+      "error": null,
+      "viewport_meta": {
+        "exists": true,
+        "content": "width=device-width, initial-scale=1.0",
+        "width_device": true,
+        "initial_scale_1": true,
+        "ok": true
+      },
+      "performance": {
+        "connect": 32,
+        "dns": 2,
+        "dom_parse": 661,
+        "dom_ready": 826,
+        "download": 5,
+        "load_total": 4533,
+        "ttfb": 82,
+        "rating": "Trung bình",
+        "rating_color": "orange"
+      },
+      "overflow": {
+        "overflow": false,
+        "scroll_height": 5329,
+        "scroll_width": 834,
+        "viewport_height": 1055,
+        "viewport_width": 834,
+        "offenders": []
+      },
+      "image_overflow": [],
+      "font_issues": [],
+      "tap_targets": [
+        {
+          "selector": "a",
+          "label": "Giảng viên và cán bộ",
+          "width": 162,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "Sinh viên",
+          "width": 85,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "Cựu sinh viên",
+          "width": 115,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "Ba công khai",
+          "width": 110,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "Tuyển dụng",
+          "width": 90,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "VI",
+          "width": 24,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "EN",
+          "width": 24,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 250,
+          "height": 36
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 250,
+          "height": 36
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 250,
+          "height": 36
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 250,
+          "height": 36
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 250,
+          "height": 36
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 250,
+          "height": 36
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 250,
+          "height": 36
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 250,
+          "height": 36
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 250,
+          "height": 36
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 250,
+          "height": 36
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 250,
+          "height": 36
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 250,
+          "height": 36
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 250,
+          "height": 36
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 250,
+          "height": 36
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 250,
+          "height": 36
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 250,
+          "height": 36
+        },
+        {
+          "selector": "a",
+          "label": "THÔNG TIN TUYỂN SINH ĐẠI HỌC CHÍNH QUY NĂM 2025",
+          "width": 546,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 546,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "Giới thiệu đào tạo sau đại học",
+          "width": 217,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "ĐẢNG ỦY",
+          "width": 68,
+          "height": 19
+        },
+        {
+          "selector": "a",
+          "label": "CÔNG ĐOÀN",
+          "width": 91,
+          "height": 19
+        },
+        {
+          "selector": "a",
+          "label": "ĐOÀN - HỘI SINH VIÊN",
+          "width": 164,
+          "height": 19
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 41,
+          "height": 40
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 41,
+          "height": 40
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 41,
+          "height": 40
+        },
+        {
+          "selector": "a",
+          "label": "Về HCMUNRE",
+          "width": 192,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "Tin Tức",
+          "width": 192,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "Tuyển Sinh",
+          "width": 192,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "Liên hệ",
+          "width": 192,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "Thông tin tuyển sinh",
+          "width": 192,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "Nghiên cứu khoa học",
+          "width": 192,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "Ngành nghề đào tạo",
+          "width": 192,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "Cồng thông tin đào tạo",
+          "width": 192,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "PHÒNG",
+          "width": 51,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Đào tạo",
+          "width": 192,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Công tác sinh viên",
+          "width": 192,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Kế hoạch – Tài chính",
+          "width": 192,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Tổ chức - Hành chính",
+          "width": 192,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "KHOA/BỘ MÔN",
+          "width": 104,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Môi trường",
+          "width": 192,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Quản lý đất đai",
+          "width": 192,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "Bộ môn Tài nguyên nước",
+          "width": 192,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Địa chất & Khoáng sản",
+          "width": 192,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Kinh tế",
+          "width": 192,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Công nghệ thông tin",
+          "width": 192,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Khoa học ứng dụng",
+          "width": 192,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "CÁC TỔ CHỨC KHOA HỌC CÔNG NGHỆ & DỊCH VỤ",
+          "width": 176,
+          "height": 42
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 71,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 99,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 54,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 78,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 60,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 106,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 75,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 147,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 64,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 96,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 91,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 82,
+          "height": 24
+        },
+        {
+          "selector": "button",
+          "label": "",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "selector": "button",
+          "label": "",
+          "width": 30,
+          "height": 29
+        }
+      ],
+      "navigation": {
+        "found": true,
+        "clickable": true,
+        "menu_appeared": true,
+        "selector": "button[class*='mobile']"
+      },
+      "form_issues": [],
+      "console_errors": [
+        {
+          "level": "SEVERE",
+          "message": "https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-631c08b0a7635ef7 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED"
+        },
+        {
+          "level": "SEVERE",
+          "message": "https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61149fea61596b42 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED"
+        },
+        {
+          "level": "SEVERE",
+          "message": "https://embed.tawk.to/64464f8e4247f20fefed63fb/1gupadhud - Failed to load resource: the server responded with a status of 404 ()"
+        },
+        {
+          "level": "SEVERE",
+          "message": "https://hcmunre.edu.vn/thumbs/819x550x1/upload/news/ - Failed to load resource: the server responded with a status of 403 ()"
+        }
+      ],
+      "accessibility": [
+        {
+          "type": "input_missing_label",
+          "detail": "input id=''"
+        }
+      ],
+      "scroll": {
+        "scroll_height": 5329,
+        "scroll_width": 834,
+        "viewport_height": 1055,
+        "viewport_width": 834,
+        "page_ratio": 5.1
+      },
+      "score_deductions": [
+        "68 tap target nhỏ (-15)",
+        "Tải trung bình 4533ms (-8)",
+        "4 lỗi console (-8)"
+      ],
+      "score": 69
+    },
+    {
+      "device": "Samsung Galaxy Tab S8",
+      "device_id": "galaxy_tab",
+      "width": 800,
+      "height": 1280,
+      "url": "https://hcmunre.edu.vn",
+      "timestamp": "2026-03-03T10:43:11.156880",
+      "error": null,
+      "viewport_meta": {
+        "exists": true,
+        "content": "width=device-width, initial-scale=1.0",
+        "width_device": true,
+        "initial_scale_1": true,
+        "ok": true
+      },
+      "performance": {
+        "connect": 34,
+        "dns": 52,
+        "dom_parse": 1407,
+        "dom_ready": 1647,
+        "download": 1,
+        "load_total": 5703,
+        "ttfb": 104,
+        "rating": "Chậm",
+        "rating_color": "red"
+      },
+      "overflow": {
+        "overflow": false,
+        "scroll_height": 5382,
+        "scroll_width": 800,
+        "viewport_height": 1141,
+        "viewport_width": 800,
+        "offenders": []
+      },
+      "image_overflow": [],
+      "font_issues": [],
+      "tap_targets": [
+        {
+          "selector": "a",
+          "label": "Giảng viên và cán bộ",
+          "width": 162,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "Sinh viên",
+          "width": 85,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "Cựu sinh viên",
+          "width": 115,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "Ba công khai",
+          "width": 110,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "Tuyển dụng",
+          "width": 90,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "VI",
+          "width": 24,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "EN",
+          "width": 24,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 250,
+          "height": 36
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 250,
+          "height": 36
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 250,
+          "height": 36
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 250,
+          "height": 36
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 250,
+          "height": 36
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 250,
+          "height": 36
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 250,
+          "height": 36
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 250,
+          "height": 36
+        },
+        {
+          "selector": "a",
+          "label": "Tin Tức",
+          "width": 43,
+          "height": 73
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 250,
+          "height": 36
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 250,
+          "height": 36
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 250,
+          "height": 36
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 250,
+          "height": 36
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 250,
+          "height": 36
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 250,
+          "height": 36
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 250,
+          "height": 36
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 250,
+          "height": 36
+        },
+        {
+          "selector": "a",
+          "label": "Lễ ký kết biên bản ghi nhớ (MOU) với Trường Đại Họ",
+          "width": 42,
+          "height": 360
+        },
+        {
+          "selector": "a",
+          "label": "Buổi đón tiếp và làm việc với đoàn công tác từ tỉn",
+          "width": 42,
+          "height": 216
+        },
+        {
+          "selector": "a",
+          "label": "HỘI NGHỊ TỔNG KẾT CÔNG TÁC NĂM 2025 VÀ PHƯƠNG HƯỚN",
+          "width": 42,
+          "height": 384
+        },
+        {
+          "selector": "a",
+          "label": "THÔNG TIN TUYỂN SINH ĐẠI HỌC CHÍNH QUY NĂM 2025",
+          "width": 524,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 524,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "ĐẢNG ỦY",
+          "width": 68,
+          "height": 19
+        },
+        {
+          "selector": "a",
+          "label": "CÔNG ĐOÀN",
+          "width": 91,
+          "height": 19
+        },
+        {
+          "selector": "a",
+          "label": "ĐOÀN - HỘI SINH VIÊN",
+          "width": 125,
+          "height": 38
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 41,
+          "height": 40
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 41,
+          "height": 40
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 41,
+          "height": 40
+        },
+        {
+          "selector": "a",
+          "label": "Về HCMUNRE",
+          "width": 184,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "Tin Tức",
+          "width": 184,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "Tuyển Sinh",
+          "width": 184,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "Liên hệ",
+          "width": 184,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "Thông tin tuyển sinh",
+          "width": 184,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "Nghiên cứu khoa học",
+          "width": 184,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "Ngành nghề đào tạo",
+          "width": 184,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "Cồng thông tin đào tạo",
+          "width": 184,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "PHÒNG",
+          "width": 51,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Đào tạo",
+          "width": 184,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "Phòng Công tác sinh viên",
+          "width": 184,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "KHOA/BỘ MÔN",
+          "width": 104,
+          "height": 18
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Môi trường",
+          "width": 184,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Quản lý đất đai",
+          "width": 184,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "Bộ môn Tài nguyên nước",
+          "width": 184,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Kinh tế",
+          "width": 184,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Công nghệ thông tin",
+          "width": 184,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "Khoa Khoa học ứng dụng",
+          "width": 184,
+          "height": 23
+        },
+        {
+          "selector": "a",
+          "label": "CÁC TỔ CHỨC KHOA HỌC CÔNG NGHỆ & DỊCH VỤ",
+          "width": 176,
+          "height": 42
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 71,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 99,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 54,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 78,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 60,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 106,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 75,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 147,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 64,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 96,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 91,
+          "height": 24
+        },
+        {
+          "selector": "a",
+          "label": "",
+          "width": 82,
+          "height": 24
+        },
+        {
+          "selector": "button",
+          "label": "",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "selector": "button",
+          "label": "",
+          "width": 30,
+          "height": 29
+        }
+      ],
+      "navigation": {
+        "found": true,
+        "clickable": true,
+        "menu_appeared": true,
+        "selector": "button[class*='mobile']"
+      },
+      "form_issues": [],
+      "console_errors": [
+        {
+          "level": "SEVERE",
+          "message": "https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-631c08b0a7635ef7 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED"
+        },
+        {
+          "level": "SEVERE",
+          "message": "https://hcmunre.edu.vn/thumbs/819x550x1/upload/news/ - Failed to load resource: the server responded with a status of 403 ()"
+        },
+        {
+          "level": "SEVERE",
+          "message": "https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61149fea61596b42 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED"
+        },
+        {
+          "level": "SEVERE",
+          "message": "https://embed.tawk.to/64464f8e4247f20fefed63fb/1gupadhud - Failed to load resource: the server responded with a status of 404 ()"
+        },
+        {
+          "level": "SEVERE",
+          "message": "https://hcmunre.edu.vn/thumbs/819x550x1/upload/news/ - Failed to load resource: the server responded with a status of 403 ()"
+        }
+      ],
+      "accessibility": [
+        {
+          "type": "input_missing_label",
+          "detail": "input id=''"
+        }
+      ],
+      "scroll": {
+        "scroll_height": 5382,
+        "scroll_width": 800,
+        "viewport_height": 1141,
+        "viewport_width": 800,
+        "page_ratio": 4.7
+      },
+      "score_deductions": [
+        "68 tap target nhỏ (-15)",
+        "Tải trung bình 5703ms (-8)",
+        "5 lỗi console (-10)"
+      ],
+      "score": 67
+    }
+  ]
+}

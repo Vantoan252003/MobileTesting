@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Viewport Tester</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  :root{--blue:#2563eb;--purple:#7c3aed;--green:#16a34a;--red:#dc2626;--amber:#d97706;--gray:#64748b}
+  body{font-family:'Segoe UI',system-ui,sans-serif;background:#f1f5f9;color:#1e293b;min-height:100vh}
+  header{background:linear-gradient(135deg,var(--blue),var(--purple));color:#fff;padding:24px 20px;text-align:center}
+  header h1{font-size:1.6rem;font-weight:800}
+  header p{margin-top:4px;opacity:.8;font-size:.9rem}
+  .container{max-width:960px;margin:0 auto;padding:24px 16px}
+  .card{background:#fff;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.07);padding:20px 22px;margin-bottom:18px}
+  .card-title{font-size:.95rem;font-weight:700;color:#334155;margin-bottom:14px;
+              border-bottom:1px solid #e2e8f0;padding-bottom:10px;display:flex;
+              justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+
+  /* URL */
+  .url-wrap{display:flex;gap:10px}
+  .url-wrap input{flex:1;padding:11px 14px;border:2px solid #e2e8f0;border-radius:8px;
+                  font-size:15px;outline:none;transition:border .2s}
+  .url-wrap input:focus{border-color:var(--blue)}
+
+  /* Buttons */
+  .btn{padding:10px 20px;border:none;border-radius:8px;font-size:13px;font-weight:700;
+       cursor:pointer;transition:all .15s;display:inline-flex;align-items:center;gap:6px}
+  .btn:disabled{opacity:.45;cursor:not-allowed}
+  .btn-blue{background:var(--blue);color:#fff} .btn-blue:not(:disabled):hover{background:#1d4ed8}
+  .btn-purple{background:var(--purple);color:#fff} .btn-purple:not(:disabled):hover{background:#6d28d9}
+  .btn-green{background:var(--green);color:#fff} .btn-green:not(:disabled):hover{background:#15803d}
+  .btn-outline{background:#fff;color:var(--blue);border:2px solid #bfdbfe;font-size:12px;padding:5px 12px}
+  .btn-outline:hover{background:#eff6ff}
+  .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+
+  /* Device groups */
+  .dev-group{margin-bottom:14px;border:1px solid #e2e8f0;border-radius:10px;overflow:hidden}
+  .dev-group-head{display:flex;justify-content:space-between;align-items:center;
+                  padding:9px 14px;background:#f8fafc;cursor:pointer;user-select:none}
+  .dev-group-head:hover{background:#f1f5f9}
+  .dev-group-title{font-size:13px;font-weight:800;color:#475569;display:flex;align-items:center;gap:8px}
+  .dev-group-actions{display:flex;gap:6px;align-items:center}
+  .dev-count{font-size:11px;font-weight:700;background:#e2e8f0;color:#64748b;
+             padding:2px 8px;border-radius:99px}
+  .dev-group-body{display:grid;grid-template-columns:repeat(auto-fill,minmax(165px,1fr));
+                  gap:8px;padding:10px 14px;border-top:1px solid #e2e8f0}
+  .dev-group.collapsed .dev-group-body{display:none}
+  .dev-item{display:flex;align-items:center;gap:8px;padding:8px 10px;
+            border:2px solid #e2e8f0;border-radius:8px;cursor:pointer;
+            transition:all .12s;user-select:none;background:#fff}
+  .dev-item:hover{border-color:var(--blue);background:#eff6ff}
+  .dev-item.on{border-color:var(--blue);background:#eff6ff}
+  .dev-item input{accent-color:var(--blue);width:14px;height:14px;flex-shrink:0}
+  .dev-info strong{display:block;font-size:12px;color:#334155;line-height:1.3}
+  .dev-info small{color:#94a3b8;font-size:10px}
+
+  /* Group badge */
+  .gb{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.03em}
+  .gb-mobile{background:#dbeafe;color:#1d4ed8}
+  .gb-tablet{background:#ede9fe;color:#6d28d9}
+  .gb-desktop{background:#dcfce7;color:#166534}
+
+  /* Mode info */
+  .modes{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:4px}
+  .mode-box{border-radius:8px;padding:12px 14px;font-size:12px;line-height:1.6}
+  .mode-box strong{display:block;margin-bottom:3px;font-size:13px}
+  .mode-s{background:#eff6ff;border:1px solid #bfdbfe} .mode-s strong{color:var(--blue)}
+  .mode-i{background:#f5f3ff;border:1px solid #ddd6fe} .mode-i strong{color:var(--purple)}
+  .mode-f{background:#f0fdf4;border:1px solid #bbf7d0} .mode-f strong{color:var(--green)}
+
+  /* Progress */
+  .prog-wrap{background:#e2e8f0;border-radius:99px;height:7px;overflow:hidden;margin:12px 0}
+  .prog-bar{height:100%;background:linear-gradient(to right,var(--blue),var(--purple));
+            border-radius:99px;width:0%;transition:width .3s ease}
+
+  /* Log */
+  #log{background:#0f172a;color:#94a3b8;font-family:'Cascadia Code',monospace;
+       font-size:12px;padding:14px 16px;border-radius:8px;height:240px;
+       overflow-y:auto;line-height:1.7;white-space:pre-wrap;word-break:break-all}
+  .ok{color:#4ade80} .warn{color:#fbbf24} .err{color:#f87171} .info{color:#60a5fa}
+
+  /* Status */
+  #status{font-size:13px;font-weight:600;margin-left:8px}
+  .s-idle{color:var(--gray)} .s-run{color:var(--blue)} .s-ok{color:var(--green)} .s-err{color:var(--red)}
+
+  /* Result */
+  #result{display:none}
+  #result.show{display:block}
+  .result-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;padding-top:10px}
+
+  @media(max-width:600px){
+    .modes{grid-template-columns:1fr}
+    .url-wrap,.actions{flex-direction:column}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Viewport Tester</h1>
+  <p>Kiểm thử hiển thị và tương tác tự động trên nhiều kích thước màn hình</p>
+</header>
+
+<div class="container">
+
+  <!-- URL -->
+  <div class="card">
+    <div class="card-title">
+      <span>URL trang web</span>
+    </div>
+    <div class="url-wrap">
+      <input id="url" type="text" placeholder="https://example.com" value="hcmunre.edu.vn"
+             onkeydown="if(event.key==='Enter')runMode('full')">
+    </div>
+  </div>
+
+  <!-- Devices -->
+  <div class="card">
+    <div class="card-title">
+      <span>Chọn viewport</span>
+      <div style="display:flex;gap:6px">
+        <button class="btn-outline btn" onclick="toggleAll(true)">Chọn tất cả</button>
+        <button class="btn-outline btn" onclick="toggleAll(false)">Bỏ chọn</button>
+        <span id="sel-count" style="font-size:12px;font-weight:700;color:var(--gray);margin-left:4px;line-height:30px"></span>
+      </div>
+    </div>
+    <div id="devices-container">
+      <div style="color:#94a3b8;font-size:13px;padding:12px 0">Đang tải danh sách thiết bị...</div>
+    </div>
+  </div>
+
+  <!-- Mode -->
+  <div class="card">
+    <div class="card-title">Chọn chế độ kiểm thử</div>
+    <div class="modes">
+      <div class="mode-box mode-s">
+        <strong>Chụp màn hình</strong>
+        Resize viewport liên tục, chụp full-page mỗi kích thước. Xem giao diện hiển thị như thế nào.
+      </div>
+      <div class="mode-box mode-i">
+        <strong>Kiểm thử tương tác</strong>
+        Tự động click button/link, kiểm tra kích thước tap target, báo cáo lỗi.
+      </div>
+      <div class="mode-box mode-f">
+        <strong>Toàn bộ</strong>
+        Chạy cả 2: ảnh chụp full-page + kiểm thử tương tác. Báo cáo đầy đủ nhất.
+      </div>
+    </div>
+    <div class="actions">
+      <button class="btn btn-blue"   onclick="runMode('screenshot')">Chụp màn hình</button>
+      <button class="btn btn-purple" onclick="runMode('interact')">Kiểm thử tương tác</button>
+      <button class="btn btn-green"  onclick="runMode('full')">Chạy toàn bộ</button>
+    </div>
+  </div>
+
+  <!-- Log -->
+  <div class="card">
+    <div class="card-title">
+      <span>Tiến trình <span id="status" class="s-idle">- Chưa chạy</span></span>
+      <button class="btn-outline btn" onclick="document.getElementById('log').textContent=''">Xóa log</button>
+    </div>
+    <div class="prog-wrap"><div class="prog-bar" id="prog"></div></div>
+    <div id="log">Nhật ký sẽ hiển thị ở đây...</div>
+  </div>
+
+  <!-- Result -->
+  <div class="card" id="result">
+    <div class="card-title">Xong</div>
+    <div class="result-row">
+      <button class="btn btn-blue"    onclick="window.open('/report','_blank')">Mở báo cáo</button>
+      <button class="btn btn-outline" onclick="location.href='/download'">Tải về HTML</button>
+    </div>
+  </div>
+
+</div>
+
+<script>
+var running = false;
+var allDevices = [];
+
+// ── Load + render devices ──────────────────────────────────────────────────
+fetch('/api/devices')
+  .then(function(r){return r.json();})
+  .then(function(devs){
+    allDevices = devs;
+    renderDevices(devs);
+    updateCount();
+  });
+
+var GROUP_INFO = {
+  mobile:  {label: 'Mobile',  cls: 'gb-mobile'},
+  tablet:  {label: 'Tablet',  cls: 'gb-tablet'},
+  desktop: {label: 'Desktop', cls: 'gb-desktop'},
+};
+
+function renderDevices(devs){
+  var groups = {mobile:[], tablet:[], desktop:[]};
+  devs.forEach(function(d){ if(groups[d.group]) groups[d.group].push(d); });
+
+  var html = '';
+  ['mobile','tablet','desktop'].forEach(function(g){
+    var list = groups[g];
+    if(!list.length) return;
+    var info = GROUP_INFO[g];
+    html += '<div class="dev-group" id="grp-'+g+'">' +
+      '<div class="dev-group-head" onclick="toggleGroup(\''+g+'\')">' +
+        '<div class="dev-group-title">' +
+          '<span class="gb '+info.cls+'">'+info.label+'</span>' +
+          '<span class="dev-count" id="gc-'+g+'">'+list.length+'/'+list.length+'</span>' +
+        '</div>' +
+        '<div class="dev-group-actions">' +
+          '<button class="btn-outline btn" onclick="event.stopPropagation();groupSel(\''+g+'\',true)">Chọn</button>' +
+          '<button class="btn-outline btn" onclick="event.stopPropagation();groupSel(\''+g+'\',false)">Bỏ</button>' +
+          '<span style="color:#94a3b8;font-size:18px;margin-left:4px">&#9660;</span>' +
+        '</div>' +
+      '</div>' +
+      '<div class="dev-group-body">' +
+        list.map(function(d){
+          return '<label class="dev-item on" id="li-'+d.id+'">' +
+            '<input type="checkbox" value="'+d.id+'" checked onchange="onCheck(this)">' +
+            '<div class="dev-info"><strong>'+d.name+'</strong><small>'+d.width+'&times;'+d.height+'px</small></div>' +
+            '</label>';
+        }).join('') +
+      '</div>' +
+    '</div>';
+  });
+  document.getElementById('devices-container').innerHTML = html;
+}
+
+function toggleGroup(g){
+  document.getElementById('grp-'+g).classList.toggle('collapsed');
+}
+
+function groupSel(g, v){
+  document.querySelectorAll('#grp-'+g+' input[type=checkbox]').forEach(function(c){
+    c.checked = v;
+    c.closest('.dev-item').classList.toggle('on', v);
+  });
+  updateCount();
+}
+
+function toggleAll(v){
+  document.querySelectorAll('#devices-container input[type=checkbox]').forEach(function(c){
+    c.checked = v;
+    c.closest('.dev-item').classList.toggle('on', v);
+  });
+  updateCount();
+}
+
+function onCheck(cb){
+  cb.closest('.dev-item').classList.toggle('on', cb.checked);
+  updateCount();
+}
+
+function updateCount(){
+  var total = document.querySelectorAll('#devices-container input[type=checkbox]').length;
+  var sel   = document.querySelectorAll('#devices-container input[type=checkbox]:checked').length;
+  document.getElementById('sel-count').textContent = sel + '/' + total + ' đã chọn';
+
+  // Update per-group counts
+  ['mobile','tablet','desktop'].forEach(function(g){
+    var t = document.querySelectorAll('#grp-'+g+' input').length;
+    var s = document.querySelectorAll('#grp-'+g+' input:checked').length;
+    var el = document.getElementById('gc-'+g);
+    if(el) el.textContent = s+'/'+t;
+  });
+}
+
+function getSelected(){
+  return Array.from(document.querySelectorAll('#devices-container input:checked'))
+              .map(function(c){return c.value;});
+}
+
+// ── Run ──────────────────────────────────────────────────────────────────────
+function runMode(mode){
+  if(running) return;
+  var url = document.getElementById('url').value.trim();
+  if(!url){alert('Vui lòng nhập URL!'); return;}
+  var devs = getSelected();
+  if(!devs.length){alert('Hãy chọn ít nhất 1 viewport!'); return;}
+
+  running = true;
+  document.getElementById('log').textContent = '';
+  document.getElementById('prog').style.width = '0%';
+  document.getElementById('result').classList.remove('show');
+  setStatus('run','Đang chạy...');
+
+  var ep = {screenshot:'/api/screenshot', interact:'/api/interact', full:'/api/full'};
+  var params = new URLSearchParams({url:url, devices:devs.join(',')});
+  var es = new EventSource(ep[mode]+'?'+params.toString());
+
+  es.addEventListener('log',      function(e){appendLog(e.data);});
+  es.addEventListener('progress', function(e){document.getElementById('prog').style.width=e.data+'%';});
+  es.addEventListener('done',     function(e){
+    running=false; setStatus('ok','Hoàn thành');
+    document.getElementById('result').classList.add('show');
+    es.close();
+  });
+  es.addEventListener('error',    function(e){
+    running=false; appendLog('LỖI: '+e.data,'err'); setStatus('err','Có lỗi'); es.close();
+  });
+  es.onerror = function(){
+    if(running){running=false; setStatus('err','Mất kết nối'); es.close();}
+  };
+}
+
+function appendLog(msg, cls){
+  var el = document.getElementById('log');
+  if(el.textContent === 'Nhật ký sẽ hiển thị ở đây...') el.textContent = '';
+  var c = cls||'';
+  if(!c){
+    if(/OK|xong|Hoàn|success|chụp xong/i.test(msg)) c='ok';
+    else if(/warn|cảnh|issue/i.test(msg)) c='warn';
+    else if(/lỗi|error|LỖI|Loi/i.test(msg)) c='err';
+    else if(/Bước|Resize|Tải|Step|test/i.test(msg)) c='info';
+  }
+  var s = document.createElement('span');
+  s.className = c; s.textContent = msg+'\n';
+  el.appendChild(s); el.scrollTop = el.scrollHeight;
+}
+
+function setStatus(type, text){
+  var el = document.getElementById('status');
+  el.className = {idle:'s-idle',run:'s-run',ok:'s-ok',err:'s-err'}[type]||'s-idle';
+  el.innerHTML = text;
+}
+</script>
+</body>
+</html>
