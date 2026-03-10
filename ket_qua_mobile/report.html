@@ -3,128 +3,176 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Viewport Test Report – https://example.com</title>
+<title>Báo cáo kiểm thử viewport – https://example.com</title>
 <style>
-  *{box-sizing:border-box;margin:0;padding:0}
-    :root{--bg:#eef2ff;--panel:#ffffff;--ink:#132238;--muted:#64748b;--line:#d9e1f2;--blue:#1d4ed8;--cyan:#0f766e;--orange:#c2410c;--green:#15803d;--rose:#be123c;--shadow:0 18px 45px rgba(15,23,42,.08)}
-    body{font-family:'Segoe UI',system-ui,sans-serif;background:radial-gradient(circle at top left,#e0f2fe,transparent 28%),radial-gradient(circle at top right,#fee2e2,transparent 22%),linear-gradient(180deg,#f8fbff 0%,#edf4ff 100%);color:var(--ink);line-height:1.5}
-    header{background:linear-gradient(135deg,#0f172a,#1d4ed8 55%,#0f766e);color:#fff;padding:34px 24px 30px;text-align:center;box-shadow:var(--shadow)}
-  header h1{font-size:1.7rem;font-weight:800}
-    header .meta{margin-top:8px;opacity:.86;font-size:.92rem}
-    .container{max-width:1480px;margin:0 auto;padding:24px 18px 48px}
-    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:18px;margin-bottom:18px}
-    .hero-card,.toolbar,.section-shell,.compare-panel,.modal-card{background:rgba(255,255,255,.88);backdrop-filter:blur(10px);border:1px solid rgba(217,225,242,.9);border-radius:18px;box-shadow:var(--shadow)}
-    .hero-card{padding:20px 22px}
-    .hero-card h2{font-size:1.15rem;margin-bottom:8px}
-    .hero-copy{color:var(--muted);font-size:.95rem;max-width:60ch}
-    .stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-    .stat-card{padding:16px;border-radius:14px;background:linear-gradient(180deg,#fff,#f8fbff);border:1px solid var(--line)}
-    .stat-card strong{display:block;font-size:1.6rem;line-height:1.1}
-    .stat-card span{display:block;color:var(--muted);font-size:.84rem;margin-top:4px}
-    .toolbar{padding:16px 18px;margin-bottom:18px;position:sticky;top:16px;z-index:20}
-    .toolbar-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap;margin-bottom:14px}
-    .toolbar h2{font-size:1rem}
-    .toolbar p{color:var(--muted);font-size:.9rem}
-    .filters-grid{display:grid;grid-template-columns:1.1fr .9fr .9fr;gap:12px}
-    .filter-box label{display:block;font-size:.8rem;font-weight:700;color:#334155;margin-bottom:6px}
-    .filter-box input,.filter-box select{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:12px;background:#fff;font:inherit;color:var(--ink)}
-    .chip-row{display:flex;gap:8px;flex-wrap:wrap}
-    .chip{border:none;border-radius:999px;padding:8px 12px;background:#e7eefc;color:#36517a;font-weight:700;cursor:pointer;transition:.15s}
-    .chip.active{background:var(--ink);color:#fff}
-    .toolbar-foot{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:14px}
-    .toolbar-note{color:var(--muted);font-size:.86rem}
-    .toolbar-actions{display:flex;gap:8px;flex-wrap:wrap}
-    .ghost-btn{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 12px;font:inherit;font-weight:700;cursor:pointer}
-    .compare-panel{padding:16px 18px;margin-bottom:18px}
-    .compare-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px}
-    .compare-head p{color:var(--muted);font-size:.9rem}
-    .compare-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
-    .compare-slot{border:1px dashed #9db1d7;border-radius:16px;padding:14px;min-height:260px;background:linear-gradient(180deg,#fbfdff,#f2f7ff)}
-    .compare-slot.ready{border-style:solid;background:#fff}
-    .compare-slot h3{font-size:.95rem;margin-bottom:8px}
-    .compare-empty{color:var(--muted);font-size:.9rem}
-    .compare-preview{width:100%;max-height:420px;object-fit:contain;border-radius:12px;background:#f8fafc;border:1px solid var(--line)}
-    .compare-meta{font-size:.84rem;color:var(--muted);margin-top:8px}
-    .section-shell{padding:18px}
-    .section-title{font-size:1.1rem;font-weight:800;color:var(--ink);margin-bottom:14px}
-    .report-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:16px}
-    .report-card{background:#fff;border:1px solid rgba(217,225,242,.9);border-radius:18px;overflow:hidden;padding:14px;display:flex;flex-direction:column;gap:12px;box-shadow:0 10px 25px rgba(15,23,42,.05)}
-    .report-card.hidden{display:none}
-    .card-topline{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;align-items:center}
-    .group-pill,.meta-pill{display:inline-flex;align-items:center;padding:4px 10px;border-radius:999px;font-size:.74rem;font-weight:800;letter-spacing:.03em;text-transform:uppercase}
-    .group-mobile{background:#dbeafe;color:#1d4ed8}
-    .group-tablet{background:#ede9fe;color:#6d28d9}
-    .group-desktop{background:#dcfce7;color:#166534}
-    .group-other{background:#f1f5f9;color:#475569}
-    .meta-pill{background:#fff7ed;color:#c2410c}
-    .vp-header{font-weight:800;font-size:1rem;color:#1e293b}
-    .vp-header small{display:block;font-weight:500;color:#8aa0bf;margin-top:2px}
-    .card-copy{color:var(--muted);font-size:.9rem}
-    .image-card{display:flex;flex-direction:column;gap:10px}
-    .image-frame{border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#eef5ff;min-height:180px}
-    .preview-image{width:100%;display:block;cursor:zoom-in}
-    .image-toolbar{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}
-    .image-actions{display:flex;gap:8px;flex-wrap:wrap}
-    .mini-btn{border:none;border-radius:10px;padding:8px 10px;background:#eff6ff;color:#1d4ed8;font:inherit;font-weight:700;cursor:pointer}
-    .mini-btn:hover{background:#dbeafe}
-    .section-header{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
-  .vp-title{font-weight:700;font-size:14px;color:#1e293b}
-  .vp-title small{font-weight:400;color:#94a3b8}
-  .badges-row{display:flex;gap:10px;flex-wrap:wrap}
-  .stat{font-size:12px;color:#64748b;font-weight:600}
-  .stat-ok{color:#16a34a}
-  .stat-warn{color:#d97706}
-  .stat-err{color:#dc2626}
-  table{width:100%;border-collapse:collapse;font-size:13px}
-  th{background:#f8fafc;padding:9px 14px;text-align:left;font-weight:700;
-      font-size:12px;color:#64748b;text-transform:uppercase;letter-spacing:.03em;
-      border-bottom:2px solid #e2e8f0}
-  td{padding:8px 14px;border-bottom:1px solid #f1f5f9;vertical-align:middle}
-  .label-cell{max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#334155}
-  .kind-badge{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700}
-  .kind-badge.button{background:#dbeafe;color:#1d4ed8}
-  .kind-badge.link{background:#ede9fe;color:#6d28d9}
-  .kind-badge.input{background:#fef9c3;color:#854d0e}
-  .kind-badge.select{background:#dcfce7;color:#166534}
-  .kind-badge.textarea{background:#ffe4e6;color:#be123c}
-  .badge{display:inline-block;padding:2px 9px;border-radius:99px;font-size:11px;font-weight:700}
-  .badge.ok{background:#dcfce7;color:#166534}
-  .badge.warn{background:#fef9c3;color:#854d0e}
-  .badge.err{background:#ffe4e6;color:#be123c;cursor:help}
-  .badge.muted{background:#f1f5f9;color:#94a3b8}
-    .err{color:#dc2626;padding:2px 0 0}
-    .empty-state{display:none;padding:24px;border:1px dashed #b6c5df;border-radius:16px;text-align:center;color:var(--muted);background:#f8fbff;margin-top:14px}
-    .empty-state.show{display:block}
-    .image-modal{position:fixed;inset:0;background:rgba(15,23,42,.74);display:none;align-items:center;justify-content:center;padding:20px;z-index:100}
-    .image-modal.open{display:flex}
-    .modal-card{max-width:min(1200px,96vw);max-height:92vh;padding:14px;display:flex;flex-direction:column;gap:12px;background:#0f172a;color:#fff}
-    .modal-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
-    .modal-top h3{font-size:1rem}
-    .modal-top p{color:#cbd5e1;font-size:.9rem;margin-top:4px}
-    .modal-close{border:none;border-radius:999px;background:#1e293b;color:#fff;padding:10px 12px;font:inherit;font-weight:700;cursor:pointer}
-    .modal-image{max-width:100%;max-height:78vh;object-fit:contain;border-radius:12px;background:#020617}
-    footer{text-align:center;padding:20px;color:#64748b;font-size:12px}
-    @media(max-width:980px){
-        .hero-grid,.filters-grid,.compare-grid{grid-template-columns:1fr}
-        .toolbar{position:static}
-    }
+    *{box-sizing:border-box;margin:0;padding:0}
+        :root{--page:#f4f7fb;--panel:#ffffff;--panel-soft:rgba(255,255,255,.82);--ink:#142033;--muted:#66758c;--line:#dbe4f0;--line-strong:#bfd0e4;--blue:#2157d5;--teal:#0f766e;--cyan:#0ea5e9;--orange:#d97706;--green:#15803d;--rose:#be123c;--shadow:0 18px 50px rgba(15,23,42,.08);--shadow-soft:0 10px 30px rgba(20,32,51,.06)}
+        body{font-family:'Segoe UI',system-ui,sans-serif;background:
+            radial-gradient(circle at 0% 0%, rgba(14,165,233,.12), transparent 28%),
+            radial-gradient(circle at 100% 0%, rgba(34,197,94,.11), transparent 24%),
+            linear-gradient(180deg, #f8fbff 0%, #eef4fb 100%);color:var(--ink);line-height:1.5}
+        header{background:linear-gradient(135deg,#0f172a 0%,#183b8c 52%,#0f766e 100%);color:#fff;padding:38px 24px 34px;text-align:center;box-shadow:var(--shadow)}
+        header h1{font-size:1.9rem;font-weight:800;letter-spacing:-.02em}
+        header .meta{margin-top:8px;opacity:.86;font-size:.95rem}
+        .container{max-width:1500px;margin:0 auto;padding:26px 18px 52px}
+        .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;margin-bottom:18px}
+        .hero-card,.toolbar,.section-shell,.modal-card,.compare-card{background:var(--panel-soft);backdrop-filter:blur(14px);border:1px solid rgba(219,228,240,.94);border-radius:22px;box-shadow:var(--shadow)}
+        .hero-card{padding:24px 24px 22px;position:relative;overflow:hidden}
+        .hero-card::after{content:'';position:absolute;inset:auto -40px -40px auto;width:180px;height:180px;background:radial-gradient(circle, rgba(14,165,233,.18), transparent 66%);pointer-events:none}
+        .hero-card h2{font-size:1.22rem;margin-bottom:8px}
+        .hero-copy{color:var(--muted);font-size:.96rem;max-width:64ch}
+        .hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+        .hero-btn{border:none;border-radius:999px;padding:10px 14px;background:#0f172a;color:#fff;font:inherit;font-weight:700;cursor:pointer}
+        .hero-btn.secondary{background:#fff;color:#183b8c;border:1px solid var(--line)}
+        .stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+        .stat-card{padding:18px;border-radius:18px;background:linear-gradient(180deg,#fff,#f7fbff);border:1px solid var(--line);box-shadow:var(--shadow-soft)}
+        .stat-card strong{display:block;font-size:1.7rem;line-height:1.05}
+        .stat-card span{display:block;color:var(--muted);font-size:.86rem;margin-top:6px}
+        .toolbar{padding:16px 16px 14px;margin-bottom:18px;position:sticky;top:14px;z-index:20}
+        .toolbar-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap;margin-bottom:12px}
+        .toolbar h2{font-size:1rem}
+        .toolbar p{color:var(--muted);font-size:.9rem}
+        .filters-grid{display:grid;grid-template-columns:1.2fr .9fr .9fr;gap:12px}
+        .filter-box{padding:12px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(180deg,#fcfeff,#f4f8fc)}
+        .filter-box label{display:block;font-size:.78rem;font-weight:800;color:#42536d;margin-bottom:7px;letter-spacing:.02em;text-transform:uppercase}
+        .filter-box input,.filter-box select{width:100%;padding:13px 14px;border:1px solid var(--line-strong);border-radius:14px;background:#fff;font:inherit;color:var(--ink);outline:none;transition:border-color .18s ease, box-shadow .18s ease;appearance:none}
+        .filter-box input:focus,.filter-box select:focus{border-color:#7aa8f8;box-shadow:0 0 0 4px rgba(33,87,213,.12)}
+        .select-wrap{position:relative}
+        .select-wrap::after{content:'▾';position:absolute;right:14px;top:50%;transform:translateY(-50%);color:#59708f;font-size:.9rem;pointer-events:none}
+        .chip-row{display:flex;gap:8px;flex-wrap:wrap}
+        .chip{border:none;border-radius:999px;padding:9px 13px;background:#e9f0fb;color:#355170;font-weight:700;cursor:pointer;transition:.16s ease;box-shadow:inset 0 0 0 1px rgba(53,81,112,.07)}
+        .chip:hover{transform:translateY(-1px)}
+        .chip.active{background:#10203a;color:#fff;box-shadow:none}
+        .toolbar-foot{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:12px}
+        .toolbar-note{color:var(--muted);font-size:.88rem}
+        .toolbar-actions{display:flex;gap:8px;flex-wrap:wrap}
+        .ghost-btn{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 13px;font:inherit;font-weight:700;cursor:pointer}
+        .ghost-btn:hover{background:#f4f8ff}
+        .section-shell{padding:18px}
+        .section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+        .section-title{font-size:1.1rem;font-weight:800;color:var(--ink)}
+        .section-subtitle{font-size:.9rem;color:var(--muted)}
+        .report-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
+        .report-card{background:#fff;border:1px solid rgba(219,228,240,.96);border-radius:22px;overflow:hidden;padding:14px;display:flex;flex-direction:column;gap:12px;box-shadow:var(--shadow-soft)}
+        .report-card.hidden{display:none}
+        .card-topline{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;align-items:center}
+        .group-pill,.meta-pill{display:inline-flex;align-items:center;padding:5px 10px;border-radius:999px;font-size:.72rem;font-weight:800;letter-spacing:.03em;text-transform:uppercase}
+        .group-mobile{background:#dbeafe;color:#1d4ed8}
+        .group-tablet{background:#ede9fe;color:#6d28d9}
+        .group-desktop{background:#dcfce7;color:#166534}
+        .group-other{background:#f1f5f9;color:#475569}
+        .meta-pill{background:#fff2db;color:#b45309}
+        .vp-header{font-weight:800;font-size:1rem;color:#1e293b}
+        .vp-header small{display:block;font-weight:500;color:#8aa0bf;margin-top:2px}
+        .card-copy{color:var(--muted);font-size:.9rem}
+        .image-card{display:flex;flex-direction:column;gap:10px}
+        .image-frame{aspect-ratio:4/3;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:linear-gradient(180deg,#edf5ff,#f7fbff)}
+        .preview-image{width:100%;height:100%;display:block;object-fit:cover;object-position:top;cursor:zoom-in;transition:transform .22s ease}
+        .image-frame:hover .preview-image{transform:scale(1.02)}
+        .image-toolbar{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}
+        .image-actions{display:flex;gap:8px;flex-wrap:wrap}
+        .mini-btn{border:none;border-radius:12px;padding:8px 11px;background:#edf4ff;color:#1d4ed8;font:inherit;font-weight:700;cursor:pointer;transition:.16s ease}
+        .mini-btn:hover{background:#dbeafe}
+        .mini-btn-strong{background:#10203a;color:#fff}
+        .mini-btn-strong:hover{background:#183157}
+        .section-header{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+        .vp-title{font-weight:700;font-size:14px;color:#1e293b}
+        .vp-title small{font-weight:400;color:#94a3b8}
+        .badges-row{display:flex;gap:8px;flex-wrap:wrap}
+        .stat{font-size:12px;color:#64748b;font-weight:700;padding:5px 9px;background:#f8fafc;border-radius:999px;border:1px solid #ebf0f6}
+        .stat-ok{color:#15803d;background:#ecfdf3;border-color:#ccefd8}
+        .stat-warn{color:#b45309;background:#fff7ed;border-color:#ffe1bf}
+        .stat-err{color:#be123c;background:#fff1f2;border-color:#ffd6dc}
+        .detail-block{border:1px solid var(--line);border-radius:16px;background:#fbfdff;overflow:hidden}
+        .detail-block summary{list-style:none;cursor:pointer;padding:11px 13px;font-weight:700;color:#27446d;background:#f4f8fd}
+        .detail-block summary::-webkit-details-marker{display:none}
+        .detail-block[open] summary{border-bottom:1px solid var(--line)}
+        table{width:100%;border-collapse:collapse;font-size:13px}
+        th{background:#f8fafc;padding:9px 12px;text-align:left;font-weight:700;font-size:12px;color:#64748b;text-transform:uppercase;letter-spacing:.03em;border-bottom:2px solid #e2e8f0}
+        td{padding:8px 12px;border-bottom:1px solid #f1f5f9;vertical-align:middle}
+        .label-cell{max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#334155}
+        .kind-badge{display:inline-block;padding:2px 8px;border-radius:999px;font-size:11px;font-weight:700}
+        .kind-badge.button{background:#dbeafe;color:#1d4ed8}
+        .kind-badge.link{background:#ede9fe;color:#6d28d9}
+        .kind-badge.input{background:#fef9c3;color:#854d0e}
+        .kind-badge.select{background:#dcfce7;color:#166534}
+        .kind-badge.textarea{background:#ffe4e6;color:#be123c}
+        .badge{display:inline-block;padding:3px 9px;border-radius:99px;font-size:11px;font-weight:700}
+        .badge.ok{background:#dcfce7;color:#166534}
+        .badge.warn{background:#fef9c3;color:#854d0e}
+        .badge.err{background:#ffe4e6;color:#be123c;cursor:help}
+        .badge.muted{background:#f1f5f9;color:#94a3b8}
+        .err{color:#dc2626;padding:2px 0 0}
+        .empty-state{display:none;padding:28px;border:1px dashed #c2d1e4;border-radius:20px;text-align:center;color:var(--muted);background:#f8fbff;margin-top:14px}
+        .empty-state.show{display:block}
+        .image-modal,.compare-modal{position:fixed;inset:0;background:rgba(9,18,33,.78);display:none;align-items:center;justify-content:center;padding:18px;z-index:110}
+        .image-modal.open,.compare-modal.open{display:flex}
+        .modal-card{width:min(1240px,96vw);max-height:92vh;padding:16px;display:flex;flex-direction:column;gap:12px;background:#081120;color:#fff}
+        .modal-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+        .modal-top h3{font-size:1rem}
+        .modal-top p{color:#cbd5e1;font-size:.9rem;margin-top:4px}
+        .modal-close{border:none;border-radius:999px;background:#16233b;color:#fff;padding:10px 13px;font:inherit;font-weight:700;cursor:pointer}
+        .modal-image{max-width:100%;max-height:78vh;object-fit:contain;border-radius:14px;background:#020617}
+        .compare-card{width:min(1380px,98vw);max-height:94vh;padding:18px;background:#07101d;color:#fff;border-color:rgba(191,208,228,.18)}
+        .compare-top{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;flex-wrap:wrap;margin-bottom:14px}
+        .compare-top p{color:#b3c2d8;font-size:.92rem;margin-top:6px}
+        .compare-actions{display:flex;gap:8px;flex-wrap:wrap}
+        .compare-chip{border:1px solid rgba(191,208,228,.24);background:#0f1d33;color:#d7e2f1;border-radius:999px;padding:9px 13px;font:inherit;font-weight:700;cursor:pointer}
+        .compare-chip.active{background:#eff6ff;color:#10203a;border-color:#eff6ff}
+        .compare-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-bottom:14px}
+        .compare-slot{background:#0b182c;border:1px solid rgba(191,208,228,.16);border-radius:20px;padding:14px;min-height:360px;display:flex;flex-direction:column;gap:10px}
+        .compare-slot.is-active{outline:2px solid rgba(111,179,255,.45)}
+        .compare-slot-head{display:flex;justify-content:space-between;align-items:center;gap:10px}
+        .compare-slot h3{font-size:1rem}
+        .compare-slot-tag{padding:4px 10px;border-radius:999px;background:#132742;color:#cfe0f6;font-size:.74rem;font-weight:800;text-transform:uppercase}
+        .compare-stage{flex:1;min-height:250px;border-radius:18px;border:1px dashed rgba(191,208,228,.24);background:linear-gradient(180deg,#07101d,#0f1d33);display:flex;align-items:center;justify-content:center;overflow:hidden}
+        .compare-stage.has-image{border-style:solid;background:#06101f}
+        .compare-placeholder{color:#93a7c2;font-size:.92rem;text-align:center;max-width:28ch;padding:0 14px}
+        .compare-image{width:100%;height:100%;max-height:460px;object-fit:contain;background:#030813}
+        .compare-meta{color:#93a7c2;font-size:.88rem}
+        .compare-strip{border-top:1px solid rgba(191,208,228,.16);padding-top:14px}
+        .compare-strip-head{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+        .compare-strip p{color:#93a7c2;font-size:.88rem}
+        .thumb-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:10px;max-height:28vh;overflow:auto;padding-right:4px}
+        .thumb-btn{border:1px solid rgba(191,208,228,.14);background:#0b182c;color:#d6e3f5;border-radius:16px;padding:8px;cursor:pointer;text-align:left;transition:.16s ease}
+        .thumb-btn:hover{transform:translateY(-1px);border-color:rgba(191,208,228,.3)}
+        .thumb-btn.is-a{box-shadow:inset 0 0 0 2px rgba(74,222,128,.6)}
+        .thumb-btn.is-b{box-shadow:inset 0 0 0 2px rgba(56,189,248,.7)}
+        .thumb-btn img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:top;border-radius:10px;display:block;margin-bottom:6px;background:#030813}
+        .thumb-btn strong{display:block;font-size:.76rem;line-height:1.3}
+        .thumb-btn span{display:block;font-size:.7rem;color:#9cb0ca;margin-top:2px}
+        footer{text-align:center;padding:20px;color:#64748b;font-size:12px}
+        @media(max-width:1100px){
+                .hero-grid,.filters-grid,.compare-grid{grid-template-columns:1fr}
+                .toolbar{position:static}
+        }
+        @media(max-width:680px){
+                .stats-grid{grid-template-columns:1fr}
+                .report-grid{grid-template-columns:1fr}
+                .hero-actions,.toolbar-actions,.compare-actions{width:100%}
+                .hero-btn,.ghost-btn,.compare-chip{flex:1;justify-content:center;text-align:center}
+        }
 </style>
 </head>
 <body>
 <header>
     <h1>Báo cáo kiểm thử viewport</h1>
-    <div class="meta">URL: <strong>https://example.com</strong> · 2026-03-10 11:10:17</div>
+    <div class="meta">URL: <strong>https://example.com</strong> · 2026-03-10 11:20:10</div>
 </header>
 <div class="container">
 
     <section class="hero-grid">
         <div class="hero-card">
-            <h2>Bộ lọc và so sánh ngay trong báo cáo</h2>
-            <p class="hero-copy">Người dùng có thể lọc theo nhóm thiết bị, tìm theo tên viewport, mở ảnh lớn và đưa 2 ảnh vào khung so sánh để đối chiếu bố cục.</p>
+            <h2>So sánh nhanh ngay trong báo cáo</h2>
+            <p class="hero-copy">Bấm nút So sánh trên bất kỳ ảnh nào để mở bảng so sánh lớn. Người dùng có thể tự chọn 2 ảnh, chuyển đổi ảnh A/B và đối chiếu chi tiết mà không cần rời khỏi báo cáo.</p>
+            <div class="hero-actions">
+                <button class="hero-btn" type="button" id="openCompareBoard">Mở bảng so sánh</button>
+                <button class="hero-btn secondary" type="button" id="scrollToResults">Xem danh sách ảnh</button>
+            </div>
         </div>
         <div class="stats-grid">
-            <div class="stat-card"><strong>2</strong><span>Tổng số mục trong báo cáo</span></div>
-            <div class="stat-card"><strong>1</strong><span>Ảnh chụp để so sánh giao diện</span></div>
+            <div class="stat-card"><strong>3</strong><span>Tổng số mục trong báo cáo</span></div>
+            <div class="stat-card"><strong>2</strong><span>Ảnh chụp để so sánh giao diện</span></div>
             <div class="stat-card"><strong>1</strong><span>Mục kiểm thử tương tác</span></div>
         </div>
     </section>
@@ -149,59 +197,52 @@
             </div>
             <div class="filter-box">
                 <label for="deviceFilter">Thiết bị</label>
-                <select id="deviceFilter"><option value="">Tat ca thiet bi</option><option value="iphone-se">iPhone SE</option></select>
+                <div class="select-wrap"><select id="deviceFilter"><option value="">Tất cả thiết bị</option><option value="ipad-mini">iPad Mini</option><option value="iphone-se">iPhone SE</option></select></div>
             </div>
             <div class="filter-box">
                 <label for="kindFilter">Mục báo cáo</label>
-                <select id="kindFilter">
+                <div class="select-wrap"><select id="kindFilter">
                     <option value="all">Tất cả</option>
                     <option value="screen">Ảnh chụp</option>
                     <option value="interaction">Tương tác</option>
-                </select>
+                </select></div>
             </div>
         </div>
         <div class="toolbar-foot">
-            <div class="toolbar-note" id="resultCount">Đang hiển thị 2/2 mục</div>
+            <div class="toolbar-note" id="resultCount">Đang hiển thị 3/3 mục</div>
             <div class="toolbar-actions">
+                <button class="ghost-btn" type="button" id="openCompareFromToolbar">Mở bảng so sánh</button>
                 <button class="ghost-btn" type="button" id="resetFilters">Đặt lại bộ lọc</button>
             </div>
         </div>
     </section>
 
-    <section class="compare-panel">
-        <div class="compare-head">
-            <div>
-                <h2>So sánh 2 hình ảnh</h2>
-                <p>Bấm So sánh A/B trên bất kỳ ảnh nào trong báo cáo, sau đó đối chiếu 2 viewport cạnh nhau.</p>
-            </div>
-            <div class="toolbar-actions">
-                <button class="ghost-btn" type="button" id="swapCompare">Đảo A/B</button>
-                <button class="ghost-btn" type="button" id="clearCompare">Xóa so sánh</button>
-            </div>
-        </div>
-        <div class="compare-grid">
-            <div class="compare-slot" id="compareA">
-                <h3>Khung A</h3>
-                <div class="compare-empty">Chưa có ảnh. Chọn "So sánh A" trên một ảnh chụp hoặc ảnh tương tác.</div>
-            </div>
-            <div class="compare-slot" id="compareB">
-                <h3>Khung B</h3>
-                <div class="compare-empty">Chưa có ảnh. Chọn "So sánh B" trên một ảnh chụp hoặc ảnh tương tác.</div>
-            </div>
-        </div>
-    </section>
-
     <section class="section-shell">
-        <div class="section-title">Danh sách viewport</div>
+        <div class="section-head">
+            <div>
+                <div class="section-title">Danh sách viewport</div>
+                <div class="section-subtitle">Ảnh được hiển thị gọn để quét nhanh. Bấm vào ảnh để xem lớn hoặc mở bảng so sánh.</div>
+            </div>
+        </div>
         <div class="report-grid" id="reportGrid">
             
         <article class="report-card report-screen" data-kind="screen" data-group="mobile"
                  data-device="iphone-se" data-search="iphone se mobile 375">
           <div class="card-topline">
             <span class="group-pill group-mobile">Mobile</span>
-            <span class="meta-pill">Screenshot</span>
+            <span class="meta-pill">Ảnh chụp</span>
           </div>
           <div class="vp-header">iPhone SE <small>375×667px</small></div>
+          <div class="card-copy">Ảnh chụp full-page để so sánh bố cục và mật độ nội dung theo từng viewport.</div>
+          
+        </article>
+        <article class="report-card report-screen" data-kind="screen" data-group="tablet"
+                 data-device="ipad-mini" data-search="ipad mini tablet 768">
+          <div class="card-topline">
+            <span class="group-pill group-tablet">Tablet</span>
+            <span class="meta-pill">Ảnh chụp</span>
+          </div>
+          <div class="vp-header">iPad Mini <small>768×1024px</small></div>
           <div class="card-copy">Ảnh chụp full-page để so sánh bố cục và mật độ nội dung theo từng viewport.</div>
           
         </article>
@@ -211,7 +252,7 @@
                  data-search="iphone se mobile 375">
           <div class="card-topline">
             <span class="group-pill group-mobile">Mobile</span>
-            <span class="meta-pill">Interaction</span>
+            <span class="meta-pill">Tương tác</span>
           </div>
           <div class="section-header">
             <span class="vp-title">iPhone SE <small>375×667px</small></span>
@@ -224,10 +265,13 @@
           </div>
           <div class="card-copy">Ảnh chụp ban đầu và bảng kết quả click/tap để người dùng lọc theo từng nhóm thiết bị.</div>
           
-          <table>
-            <tr><th>Loai</th><th>Ten/Label</th><th>Kich thuoc</th><th>Tap >=44px</th><th>Click</th></tr>
-            
-          </table>
+                    <details class="detail-block">
+                        <summary>Xem bảng chi tiết tương tác</summary>
+                        <table>
+                            <tr><th>Loại</th><th>Tên/Label</th><th>Kích thước</th><th>Tap >=44px</th><th>Click</th></tr>
+                            
+                        </table>
+                    </details>
         </article>
         </div>
         <div class="empty-state" id="emptyState">Không có mục nào phù hợp với bộ lọc hiện tại.</div>
@@ -246,7 +290,35 @@
         <img class="modal-image" id="modalImage" src="" alt="Preview">
     </div>
 </div>
-<footer>Tạo bởi Viewport Tester &nbsp;·&nbsp; 2026-03-10 11:10:17</footer>
+<div class="compare-modal" id="compareModal">
+    <div class="compare-card">
+        <div class="compare-top">
+            <div>
+                <h2>So sánh hình ảnh</h2>
+                <p>Chọn khung A hoặc B, sau đó bấm thumbnail phía dưới để gán ảnh vào đúng khung. Ảnh đang bấm So sánh sẽ được đưa vào đây trước.</p>
+            </div>
+            <div class="compare-actions">
+                <button class="compare-chip active" type="button" data-slot="a">Đang chọn khung A</button>
+                <button class="compare-chip" type="button" data-slot="b">Đang chọn khung B</button>
+                <button class="compare-chip" type="button" id="swapCompare">Đảo A/B</button>
+                <button class="compare-chip" type="button" id="clearCompare">Xóa hết</button>
+                <button class="compare-chip" type="button" id="closeCompare">Đóng</button>
+            </div>
+        </div>
+        <div class="compare-grid">
+            <div class="compare-slot" id="compareSlotA"></div>
+            <div class="compare-slot" id="compareSlotB"></div>
+        </div>
+        <div class="compare-strip">
+            <div class="compare-strip-head">
+                <strong>Kho ảnh để so sánh</strong>
+                <p>Thumbnail phía dưới được giữ gọn để người dùng chọn nhanh ảnh cần đối chiếu.</p>
+            </div>
+            <div class="thumb-grid" id="compareThumbGrid"></div>
+        </div>
+    </div>
+</div>
+<footer>Tạo bởi Viewport Tester &nbsp;·&nbsp; 2026-03-10 11:20:10</footer>
 <script>
     const reportCards = Array.from(document.querySelectorAll('.report-card'));
     const reportGrid = document.getElementById('reportGrid');
@@ -260,7 +332,20 @@
     const modalImage = document.getElementById('modalImage');
     const modalTitle = document.getElementById('modalTitle');
     const modalMeta = document.getElementById('modalMeta');
-    const compareSlots = { a: null, b: null };
+    const compareModal = document.getElementById('compareModal');
+    const compareThumbGrid = document.getElementById('compareThumbGrid');
+    const compareSlotButtons = Array.from(document.querySelectorAll('.compare-chip[data-slot]'));
+    const imageCards = Array.from(document.querySelectorAll('.image-card'));
+    const compareState = { a: null, b: null, active: 'b' };
+
+    function escapeHtml(value) {
+        return String(value || '')
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
+    }
 
     function getActiveGroup() {
         const active = groupChips.find((chip) => chip.classList.contains('active'));
@@ -303,6 +388,10 @@
         };
     }
 
+    function sameImage(a, b) {
+        return Boolean(a && b && a.src === b.src && a.title === b.title);
+    }
+
     function openModal(meta) {
         if (!meta) return;
         modalImage.src = meta.src;
@@ -316,26 +405,92 @@
         modalImage.src = '';
     }
 
-    function renderCompare(slotName) {
-        const slotEl = document.getElementById(slotName === 'a' ? 'compareA' : 'compareB');
-        const meta = compareSlots[slotName];
+    function setActiveCompareSlot(slotName) {
+        compareState.active = slotName;
+        compareSlotButtons.forEach((button) => {
+            button.classList.toggle('active', button.dataset.slot === slotName);
+            button.textContent = button.dataset.slot === slotName
+                ? `Đang chọn khung ${button.dataset.slot.toUpperCase()}`
+                : `Chọn khung ${button.dataset.slot.toUpperCase()}`;
+        });
+        renderCompare();
+    }
+
+    function renderCompareSlot(slotName) {
+        const slotEl = document.getElementById(slotName === 'a' ? 'compareSlotA' : 'compareSlotB');
+        const meta = compareState[slotName];
+        slotEl.classList.toggle('is-active', compareState.active === slotName);
         if (!meta) {
-            slotEl.classList.remove('ready');
-            slotEl.innerHTML = `<h3>Khung ${slotName.toUpperCase()}</h3><div class="compare-empty">Chưa có ảnh. Chọn "So sánh ${slotName.toUpperCase()}" trên một ảnh chụp hoặc ảnh tương tác.</div>`;
+            slotEl.innerHTML = `
+                <div class="compare-slot-head">
+                    <h3>Khung ${slotName.toUpperCase()}</h3>
+                    <span class="compare-slot-tag">Sẵn sàng</span>
+                </div>
+                <div class="compare-stage">
+                    <div class="compare-placeholder">Chưa có ảnh trong khung ${slotName.toUpperCase()}. Chọn thumbnail phía dưới để đưa ảnh vào khung này.</div>
+                </div>
+            `;
             return;
         }
-        slotEl.classList.add('ready');
         slotEl.innerHTML = `
-            <h3>${meta.title}</h3>
-            <img class="compare-preview" src="${meta.src}" alt="${meta.title}">
-            <div class="compare-meta">${meta.kind} · ${meta.group || 'khác'} · ${meta.width}x${meta.height}px</div>
+            <div class="compare-slot-head">
+                <h3>${escapeHtml(meta.title)}</h3>
+                <span class="compare-slot-tag">Khung ${slotName.toUpperCase()}</span>
+            </div>
+            <div class="compare-stage has-image">
+                <img class="compare-image" src="${meta.src}" alt="${escapeHtml(meta.title)}">
+            </div>
+            <div class="compare-meta">${escapeHtml(meta.kind)} · ${escapeHtml(meta.group || 'khác')} · ${escapeHtml(meta.width)}x${escapeHtml(meta.height)}px</div>
         `;
     }
 
-    function setCompare(slotName, meta) {
+    function renderCompareThumbs() {
+        compareThumbGrid.innerHTML = imageCards.map((imageCard, index) => {
+            const meta = getImageMeta(imageCard);
+            const isA = sameImage(compareState.a, meta);
+            const isB = sameImage(compareState.b, meta);
+            return `
+                <button class="thumb-btn ${isA ? 'is-a' : ''} ${isB ? 'is-b' : ''}" type="button" data-thumb-index="${index}">
+                    <img src="${meta.src}" alt="${escapeHtml(meta.title)}">
+                    <strong>${escapeHtml(meta.title)}</strong>
+                    <span>${escapeHtml(meta.width)}x${escapeHtml(meta.height)}px · ${escapeHtml(meta.group || 'khác')}</span>
+                </button>
+            `;
+        }).join('');
+    }
+
+    function renderCompare() {
+        renderCompareSlot('a');
+        renderCompareSlot('b');
+        renderCompareThumbs();
+    }
+
+    function assignCompare(slotName, meta) {
         if (!meta) return;
-        compareSlots[slotName] = meta;
-        renderCompare(slotName);
+        compareState[slotName] = meta;
+        renderCompare();
+    }
+
+    function openCompare(meta) {
+        if (meta) {
+            if (!compareState.a || sameImage(compareState.a, meta)) {
+                compareState.a = meta;
+                if (sameImage(compareState.b, meta)) compareState.b = null;
+                compareState.active = 'b';
+            } else if (!compareState.b || sameImage(compareState.b, meta)) {
+                compareState.b = meta;
+                compareState.active = 'a';
+            } else {
+                compareState[compareState.active] = meta;
+                compareState.active = compareState.active === 'a' ? 'b' : 'a';
+            }
+        }
+        renderCompare();
+        compareModal.classList.add('open');
+    }
+
+    function closeCompare() {
+        compareModal.classList.remove('open');
     }
 
     groupChips.forEach((chip) => {
@@ -349,6 +504,11 @@
     searchFilter.addEventListener('input', applyFilters);
     deviceFilter.addEventListener('change', applyFilters);
     kindFilter.addEventListener('change', applyFilters);
+    document.getElementById('scrollToResults').addEventListener('click', () => {
+        reportGrid.scrollIntoView({behavior: 'smooth', block: 'start'});
+    });
+    document.getElementById('openCompareBoard').addEventListener('click', () => openCompare());
+    document.getElementById('openCompareFromToolbar').addEventListener('click', () => openCompare());
     document.getElementById('resetFilters').addEventListener('click', () => {
         searchFilter.value = '';
         deviceFilter.value = '';
@@ -359,39 +519,54 @@
 
     reportGrid.addEventListener('click', (event) => {
         const openTrigger = event.target.closest('.js-open-image');
-        const compareA = event.target.closest('.js-compare-a');
-        const compareB = event.target.closest('.js-compare-b');
-        if (!openTrigger && !compareA && !compareB) return;
+        const compareTrigger = event.target.closest('.js-open-compare');
+        if (!openTrigger && !compareTrigger) return;
 
         const meta = getImageMeta(event.target);
         if (openTrigger) openModal(meta);
-        if (compareA) setCompare('a', meta);
-        if (compareB) setCompare('b', meta);
+        if (compareTrigger) openCompare(meta);
+    });
+
+    compareThumbGrid.addEventListener('click', (event) => {
+        const thumb = event.target.closest('.thumb-btn');
+        if (!thumb) return;
+        const meta = getImageMeta(imageCards[Number(thumb.dataset.thumbIndex)]);
+        assignCompare(compareState.active, meta);
+    });
+
+    compareSlotButtons.forEach((button) => {
+        button.addEventListener('click', () => setActiveCompareSlot(button.dataset.slot));
     });
 
     document.getElementById('closeModal').addEventListener('click', closeModal);
     imageModal.addEventListener('click', (event) => {
         if (event.target === imageModal) closeModal();
     });
+    document.getElementById('closeCompare').addEventListener('click', closeCompare);
+    compareModal.addEventListener('click', (event) => {
+        if (event.target === compareModal) closeCompare();
+    });
     document.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape') closeModal();
+        if (event.key === 'Escape') {
+            closeModal();
+            closeCompare();
+        }
     });
     document.getElementById('swapCompare').addEventListener('click', () => {
-        const temp = compareSlots.a;
-        compareSlots.a = compareSlots.b;
-        compareSlots.b = temp;
-        renderCompare('a');
-        renderCompare('b');
+        const temp = compareState.a;
+        compareState.a = compareState.b;
+        compareState.b = temp;
+        renderCompare();
     });
     document.getElementById('clearCompare').addEventListener('click', () => {
-        compareSlots.a = null;
-        compareSlots.b = null;
-        renderCompare('a');
-        renderCompare('b');
+        compareState.a = null;
+        compareState.b = null;
+        compareState.active = 'a';
+        setActiveCompareSlot('a');
+        renderCompare();
     });
 
-    renderCompare('a');
-    renderCompare('b');
+    setActiveCompareSlot('b');
     applyFilters();
 </script>
 </body>
