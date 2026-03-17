@@ -11,6 +11,7 @@
             radial-gradient(circle at 0% 0%, rgba(14,165,233,.12), transparent 28%),
             radial-gradient(circle at 100% 0%, rgba(34,197,94,.11), transparent 24%),
             linear-gradient(180deg, #f8fbff 0%, #eef4fb 100%);color:var(--ink);line-height:1.5}
+        body.modal-open{overflow:hidden}
         header{background:linear-gradient(135deg,#0f172a 0%,#183b8c 52%,#0f766e 100%);color:#fff;padding:38px 24px 34px;text-align:center;box-shadow:var(--shadow)}
         header h1{font-size:1.9rem;font-weight:800;letter-spacing:-.02em}
         header .meta{margin-top:8px;opacity:.86;font-size:.95rem}
@@ -48,6 +49,7 @@
         .toolbar-actions{display:flex;gap:8px;flex-wrap:wrap}
         .ghost-btn{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 13px;font:inherit;font-weight:700;cursor:pointer}
         .ghost-btn:hover{background:#f4f8ff}
+        .ghost-btn-detail{align-self:flex-start;background:#f7fbff}
         .section-shell{padding:18px}
         .section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;margin-bottom:14px}
         .section-title{font-size:1.1rem;font-weight:800;color:var(--ink)}
@@ -83,10 +85,13 @@
         .stat-ok{color:#15803d;background:#ecfdf3;border-color:#ccefd8}
         .stat-warn{color:#b45309;background:#fff7ed;border-color:#ffe1bf}
         .stat-err{color:#be123c;background:#fff1f2;border-color:#ffd6dc}
-        .detail-block{border:1px solid var(--line);border-radius:16px;background:#fbfdff;overflow:hidden}
-        .detail-block summary{list-style:none;cursor:pointer;padding:11px 13px;font-weight:700;color:#27446d;background:#f4f8fd}
-        .detail-block summary::-webkit-details-marker{display:none}
-        .detail-block[open] summary{border-bottom:1px solid var(--line)}
+        .detail-actions-row{display:flex;justify-content:flex-start}
+        .detail-source{display:none}
+        .detail-sheet{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden}
+        .detail-sheet-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap;padding:16px 16px 14px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#fbfdff,#f4f8fd)}
+        .detail-sheet-head h3{font-size:1.05rem;margin-bottom:4px}
+        .detail-sheet-head p{color:var(--muted);font-size:.9rem}
+        .detail-table-wrap{overflow:auto;max-width:100%}
         table{width:100%;border-collapse:collapse;font-size:13px}
         th{background:#f8fafc;padding:9px 12px;text-align:left;font-weight:700;font-size:12px;color:#64748b;text-transform:uppercase;letter-spacing:.03em;border-bottom:2px solid #e2e8f0}
         td{padding:8px 12px;border-bottom:1px solid #f1f5f9;vertical-align:middle}
@@ -105,15 +110,20 @@
         .err{color:#dc2626;padding:2px 0 0}
         .empty-state{display:none;padding:28px;border:1px dashed #c2d1e4;border-radius:20px;text-align:center;color:var(--muted);background:#f8fbff;margin-top:14px}
         .empty-state.show{display:block}
-        .image-modal,.compare-modal{position:fixed;inset:0;background:rgba(9,18,33,.78);display:none;align-items:center;justify-content:center;padding:18px;z-index:110}
-        .image-modal.open,.compare-modal.open{display:flex}
-        .modal-card{width:min(1240px,96vw);max-height:92vh;padding:16px;display:flex;flex-direction:column;gap:12px;background:#081120;color:#fff}
+        .image-modal,.compare-modal,.detail-modal{position:fixed;inset:0;background:rgba(9,18,33,.78);display:none;padding:18px;z-index:110;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+        .image-modal.open,.compare-modal.open,.detail-modal.open{display:block}
+        .modal-card{width:min(1240px,96vw);height:min(calc(100dvh - 36px), 920px);padding:16px;display:flex;flex-direction:column;gap:12px;background:#081120;color:#fff;overflow:hidden;overscroll-behavior:contain;margin:auto}
         .modal-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
         .modal-top h3{font-size:1rem}
         .modal-top p{color:#cbd5e1;font-size:.9rem;margin-top:4px}
         .modal-close{border:none;border-radius:999px;background:#16233b;color:#fff;padding:10px 13px;font:inherit;font-weight:700;cursor:pointer}
-        .modal-image{max-width:100%;max-height:78vh;object-fit:contain;border-radius:14px;background:#020617}
-        .compare-card{width:min(1380px,98vw);max-height:94vh;padding:18px;background:#07101d;color:#fff;border-color:rgba(191,208,228,.18)}
+        .modal-tools{display:flex;gap:8px;flex-wrap:wrap}
+        .modal-tool-btn{border:none;border-radius:999px;background:#16233b;color:#fff;padding:9px 12px;font:inherit;font-weight:700;cursor:pointer}
+        .modal-stage{flex:1;overflow:auto;overscroll-behavior:contain;border-radius:16px;background:#020617;padding:8px}
+        .modal-stage-inner{min-height:100%;display:flex;align-items:flex-start;justify-content:center}
+        .modal-image{max-width:100%;max-height:none;object-fit:contain;border-radius:14px;background:#020617;cursor:zoom-in;transition:transform .18s ease;transform-origin:top center}
+        .modal-image.zoomed{cursor:zoom-out}
+        .compare-card{width:min(1380px,98vw);max-height:calc(100dvh - 36px);padding:18px;background:#07101d;color:#fff;border-color:rgba(191,208,228,.18);display:flex;flex-direction:column;overflow:auto;overscroll-behavior:contain;margin:auto}
         .compare-top{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;flex-wrap:wrap;margin-bottom:14px}
         .compare-top p{color:#b3c2d8;font-size:.92rem;margin-top:6px}
         .compare-actions{display:flex;gap:8px;flex-wrap:wrap}
@@ -141,6 +151,9 @@
         .thumb-btn img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:top;border-radius:10px;display:block;margin-bottom:6px;background:#030813}
         .thumb-btn strong{display:block;font-size:.76rem;line-height:1.3}
         .thumb-btn span{display:block;font-size:.7rem;color:#9cb0ca;margin-top:2px}
+        .detail-modal-card{width:min(1320px,96vw);height:min(calc(100dvh - 36px), 920px);padding:16px;background:#fff;color:var(--ink);display:flex;flex-direction:column;gap:12px;overflow:hidden;overscroll-behavior:contain;margin:auto;border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow)}
+        .detail-modal-card .modal-top p{color:var(--muted)}
+        .detail-modal-body{display:flex;flex-direction:column;gap:12px;min-height:0;flex:1;overflow:auto;overscroll-behavior:contain;padding-right:4px}
         footer{text-align:center;padding:20px;color:#64748b;font-size:12px}
         @media(max-width:1100px){
                 .hero-grid,.filters-grid,.compare-grid{grid-template-columns:1fr}
@@ -157,7 +170,7 @@
 <body>
 <header>
     <h1>Báo cáo kiểm thử viewport</h1>
-    <div class="meta">URL: <strong>https://example.com</strong> · 2026-03-10 11:20:10</div>
+    <div class="meta">URL: <strong>https://example.com</strong> · 2026-03-10 11:39:58</div>
 </header>
 <div class="container">
 
@@ -171,8 +184,8 @@
             </div>
         </div>
         <div class="stats-grid">
-            <div class="stat-card"><strong>3</strong><span>Tổng số mục trong báo cáo</span></div>
-            <div class="stat-card"><strong>2</strong><span>Ảnh chụp để so sánh giao diện</span></div>
+            <div class="stat-card"><strong>2</strong><span>Tổng số mục trong báo cáo</span></div>
+            <div class="stat-card"><strong>1</strong><span>Ảnh chụp để so sánh giao diện</span></div>
             <div class="stat-card"><strong>1</strong><span>Mục kiểm thử tương tác</span></div>
         </div>
     </section>
@@ -197,7 +210,7 @@
             </div>
             <div class="filter-box">
                 <label for="deviceFilter">Thiết bị</label>
-                <div class="select-wrap"><select id="deviceFilter"><option value="">Tất cả thiết bị</option><option value="ipad-mini">iPad Mini</option><option value="iphone-se">iPhone SE</option></select></div>
+                <div class="select-wrap"><select id="deviceFilter"><option value="">Tất cả thiết bị</option><option value="iphone-se">iPhone SE</option></select></div>
             </div>
             <div class="filter-box">
                 <label for="kindFilter">Mục báo cáo</label>
@@ -209,7 +222,7 @@
             </div>
         </div>
         <div class="toolbar-foot">
-            <div class="toolbar-note" id="resultCount">Đang hiển thị 3/3 mục</div>
+            <div class="toolbar-note" id="resultCount">Đang hiển thị 2/2 mục</div>
             <div class="toolbar-actions">
                 <button class="ghost-btn" type="button" id="openCompareFromToolbar">Mở bảng so sánh</button>
                 <button class="ghost-btn" type="button" id="resetFilters">Đặt lại bộ lọc</button>
@@ -236,16 +249,6 @@
           <div class="card-copy">Ảnh chụp full-page để so sánh bố cục và mật độ nội dung theo từng viewport.</div>
           
         </article>
-        <article class="report-card report-screen" data-kind="screen" data-group="tablet"
-                 data-device="ipad-mini" data-search="ipad mini tablet 768">
-          <div class="card-topline">
-            <span class="group-pill group-tablet">Tablet</span>
-            <span class="meta-pill">Ảnh chụp</span>
-          </div>
-          <div class="vp-header">iPad Mini <small>768×1024px</small></div>
-          <div class="card-copy">Ảnh chụp full-page để so sánh bố cục và mật độ nội dung theo từng viewport.</div>
-          
-        </article>
             
         <article class="report-card report-interaction" data-kind="interaction" data-group="mobile"
                  data-device="iphone-se"
@@ -257,21 +260,45 @@
           <div class="section-header">
             <span class="vp-title">iPhone SE <small>375×667px</small></span>
             <div class="badges-row">
-              <span class="stat">0 phan tu</span>
-              <span class="stat ">Tap issues: 0</span>
-              <span class="stat ">Click OK: 0</span>
+              <span class="stat">1 phan tu</span>
+              <span class="stat stat-warn">Tap issues: 1</span>
+              <span class="stat stat-ok">Click OK: 1</span>
               <span class="stat ">Lỗi: 0</span>
             </div>
           </div>
           <div class="card-copy">Ảnh chụp ban đầu và bảng kết quả click/tap để người dùng lọc theo từng nhóm thiết bị.</div>
           
-                    <details class="detail-block">
-                        <summary>Xem bảng chi tiết tương tác</summary>
-                        <table>
-                            <tr><th>Loại</th><th>Tên/Label</th><th>Kích thước</th><th>Tap >=44px</th><th>Click</th></tr>
-                            
-                        </table>
-                    </details>
+                    <div class="detail-actions-row">
+                        <button class="ghost-btn ghost-btn-detail js-open-detail" type="button">Xem chi tiết tương tác</button>
+                    </div>
+                    <div class="detail-source" hidden>
+                        <div class="detail-sheet">
+                            <div class="detail-sheet-head">
+                                <div>
+                                    <h3>iPhone SE</h3>
+                                    <p>375×667px · Mobile · 1 phần tử tương tác</p>
+                                </div>
+                                <div class="badges-row">
+                                    <span class="stat stat-warn">Tap issues: 1</span>
+                                    <span class="stat stat-ok">Click OK: 1</span>
+                                    <span class="stat ">Lỗi: 0</span>
+                                </div>
+                            </div>
+                            <div class="detail-table-wrap">
+                                <table>
+                                    <tr><th>Loại</th><th>Tên/Label</th><th>Kích thước</th><th>Tap >=44px</th><th>Click</th></tr>
+                                    
+            <tr>
+              <td><span class="kind-badge button">button</span></td>
+              <td class="label-cell">Menu</td>
+              <td>40×40px</td>
+              <td><span class="badge warn">40×40px</span></td>
+              <td><span class="badge ok">OK</span></td>
+            </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
         </article>
         </div>
         <div class="empty-state" id="emptyState">Không có mục nào phù hợp với bộ lọc hiện tại.</div>
@@ -285,9 +312,17 @@
                 <h3 id="modalTitle">Xem hình ảnh</h3>
                 <p id="modalMeta"></p>
             </div>
-            <button class="modal-close" id="closeModal" type="button">Đóng</button>
+            <div class="modal-tools">
+                <button class="modal-tool-btn" id="toggleZoom" type="button">Phóng to</button>
+                <button class="modal-tool-btn" id="resetZoom" type="button">Đặt lại</button>
+                <button class="modal-close" id="closeModal" type="button">Đóng</button>
+            </div>
         </div>
-        <img class="modal-image" id="modalImage" src="" alt="Preview">
+        <div class="modal-stage" id="modalStage">
+            <div class="modal-stage-inner">
+                <img class="modal-image" id="modalImage" src="" alt="Preview">
+            </div>
+        </div>
     </div>
 </div>
 <div class="compare-modal" id="compareModal">
@@ -318,7 +353,19 @@
         </div>
     </div>
 </div>
-<footer>Tạo bởi Viewport Tester &nbsp;·&nbsp; 2026-03-10 11:20:10</footer>
+<div class="detail-modal" id="detailModal">
+    <div class="detail-modal-card">
+        <div class="modal-top">
+            <div>
+                <h3 id="detailModalTitle">Chi tiết tương tác</h3>
+                <p id="detailModalMeta">Cuộn dọc để xem thêm và cuộn ngang nếu bảng rộng hơn màn hình.</p>
+            </div>
+            <button class="modal-close" id="closeDetailModal" type="button">Đóng</button>
+        </div>
+        <div class="detail-modal-body" id="detailModalBody"></div>
+    </div>
+</div>
+<footer>Tạo bởi Viewport Tester &nbsp;·&nbsp; 2026-03-10 11:39:58</footer>
 <script>
     const reportCards = Array.from(document.querySelectorAll('.report-card'));
     const reportGrid = document.getElementById('reportGrid');
@@ -332,11 +379,24 @@
     const modalImage = document.getElementById('modalImage');
     const modalTitle = document.getElementById('modalTitle');
     const modalMeta = document.getElementById('modalMeta');
+    const modalStage = document.getElementById('modalStage');
+    const toggleZoomBtn = document.getElementById('toggleZoom');
+    const resetZoomBtn = document.getElementById('resetZoom');
     const compareModal = document.getElementById('compareModal');
     const compareThumbGrid = document.getElementById('compareThumbGrid');
     const compareSlotButtons = Array.from(document.querySelectorAll('.compare-chip[data-slot]'));
     const imageCards = Array.from(document.querySelectorAll('.image-card'));
+    const detailModal = document.getElementById('detailModal');
+    const detailModalBody = document.getElementById('detailModalBody');
+    const detailModalTitle = document.getElementById('detailModalTitle');
+    const detailModalMeta = document.getElementById('detailModalMeta');
     const compareState = { a: null, b: null, active: 'b' };
+    let imageZoomLevel = 1;
+
+    function syncBodyLock() {
+        const anyOpen = [imageModal, compareModal, detailModal].some((modal) => modal.classList.contains('open'));
+        document.body.classList.toggle('modal-open', anyOpen);
+    }
 
     function escapeHtml(value) {
         return String(value || '')
@@ -392,17 +452,53 @@
         return Boolean(a && b && a.src === b.src && a.title === b.title);
     }
 
+    function applyImageZoom() {
+        modalImage.style.transform = `scale(${imageZoomLevel})`;
+        modalImage.classList.toggle('zoomed', imageZoomLevel > 1);
+        toggleZoomBtn.textContent = imageZoomLevel > 1 ? 'Thu nhỏ' : 'Phóng to';
+    }
+
+    function setImageZoom(level) {
+        imageZoomLevel = Math.max(1, Math.min(level, 3));
+        applyImageZoom();
+        if (imageZoomLevel === 1) {
+            modalStage.scrollTop = 0;
+            modalStage.scrollLeft = 0;
+        }
+    }
+
     function openModal(meta) {
         if (!meta) return;
         modalImage.src = meta.src;
         modalTitle.textContent = meta.title;
         modalMeta.textContent = `${meta.kind} · ${meta.group || 'khác'} · ${meta.width}x${meta.height}px`;
+        setImageZoom(1);
         imageModal.classList.add('open');
+        syncBodyLock();
     }
 
     function closeModal() {
         imageModal.classList.remove('open');
         modalImage.src = '';
+        setImageZoom(1);
+        syncBodyLock();
+    }
+
+    function openDetail(card) {
+        const source = card.querySelector('.detail-source');
+        if (!source) return;
+        const title = card.querySelector('.vp-title')?.textContent?.trim() || 'Chi tiết tương tác';
+        detailModalTitle.textContent = title;
+        detailModalMeta.textContent = 'Cuộn dọc để xem thêm và cuộn ngang nếu bảng rộng hơn màn hình.';
+        detailModalBody.innerHTML = source.innerHTML;
+        detailModal.classList.add('open');
+        syncBodyLock();
+    }
+
+    function closeDetail() {
+        detailModal.classList.remove('open');
+        detailModalBody.innerHTML = '';
+        syncBodyLock();
     }
 
     function setActiveCompareSlot(slotName) {
@@ -487,10 +583,12 @@
         }
         renderCompare();
         compareModal.classList.add('open');
+        syncBodyLock();
     }
 
     function closeCompare() {
         compareModal.classList.remove('open');
+        syncBodyLock();
     }
 
     groupChips.forEach((chip) => {
@@ -520,11 +618,13 @@
     reportGrid.addEventListener('click', (event) => {
         const openTrigger = event.target.closest('.js-open-image');
         const compareTrigger = event.target.closest('.js-open-compare');
-        if (!openTrigger && !compareTrigger) return;
+        const detailTrigger = event.target.closest('.js-open-detail');
+        if (!openTrigger && !compareTrigger && !detailTrigger) return;
 
         const meta = getImageMeta(event.target);
         if (openTrigger) openModal(meta);
         if (compareTrigger) openCompare(meta);
+        if (detailTrigger) openDetail(event.target.closest('.report-card'));
     });
 
     compareThumbGrid.addEventListener('click', (event) => {
@@ -539,6 +639,13 @@
     });
 
     document.getElementById('closeModal').addEventListener('click', closeModal);
+    toggleZoomBtn.addEventListener('click', () => {
+        setImageZoom(imageZoomLevel > 1 ? 1 : 2);
+    });
+    resetZoomBtn.addEventListener('click', () => setImageZoom(1));
+    modalImage.addEventListener('click', () => {
+        setImageZoom(imageZoomLevel > 1 ? 1 : 2);
+    });
     imageModal.addEventListener('click', (event) => {
         if (event.target === imageModal) closeModal();
     });
@@ -546,10 +653,15 @@
     compareModal.addEventListener('click', (event) => {
         if (event.target === compareModal) closeCompare();
     });
+    document.getElementById('closeDetailModal').addEventListener('click', closeDetail);
+    detailModal.addEventListener('click', (event) => {
+        if (event.target === detailModal) closeDetail();
+    });
     document.addEventListener('keydown', (event) => {
         if (event.key === 'Escape') {
             closeModal();
             closeCompare();
+            closeDetail();
         }
     });
     document.getElementById('swapCompare').addEventListener('click', () => {
