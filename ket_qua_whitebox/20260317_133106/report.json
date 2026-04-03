@@ -1,0 +1,1013 @@
+{
+  "url": "https://hcmunre.edu.vn",
+  "run_at": "2026-03-17 13:36:14",
+  "thresholds": {
+    "overflow_fail_px": 8,
+    "logo_ratio_fail": 0.035,
+    "small_tap_warn_ratio": 0.35,
+    "mobile_breakpoint": 992
+  },
+  "summary": {
+    "total": 19,
+    "failed": 19,
+    "warning_only": 0,
+    "passed": 0
+  },
+  "results": [
+    {
+      "device_id": "laptop_768",
+      "name": "Laptop S (1024px)",
+      "group": "desktop",
+      "width": 1024,
+      "height": 768,
+      "screenshot": "/Users/nguyenvantoan/dev/mobile_testing/ket_qua_whitebox/20260317_133106/screenshots/laptop_768_1024x768.png",
+      "checks": {
+        "layout": {
+          "docW": 1024,
+          "interactiveCount": 135,
+          "overflowPx": 0,
+          "smallTapCount": 45,
+          "viewportH": 629,
+          "viewportW": 1024,
+          "smallTapRatio": 0.3333
+        },
+        "logo": {
+          "found": true,
+          "distorted": true,
+          "reason": "object-fit: fill",
+          "hint": "Trường ĐH Tài nguyên và Môi trường Tp. HCM",
+          "rendered": "120.0x120.0",
+          "intrinsic": "120x120",
+          "rendered_ratio": 1.0,
+          "intrinsic_ratio": 1.0,
+          "baseline_ratio": null,
+          "delta_intrinsic": 0.0,
+          "delta_baseline": null
+        },
+        "mobile_menu": {
+          "checked": false,
+          "ok": true,
+          "reason": "skip on non-mobile"
+        },
+        "nav_link": {
+          "checked": true,
+          "ok": false,
+          "reason": "no visible nav/header link found"
+        }
+      },
+      "failures": [
+        "logo distortion: object-fit: fill",
+        "header/nav link interaction failed: no visible nav/header link found"
+      ],
+      "warnings": []
+    },
+    {
+      "device_id": "laptop",
+      "name": "Laptop (1280px)",
+      "group": "desktop",
+      "width": 1280,
+      "height": 800,
+      "screenshot": "/Users/nguyenvantoan/dev/mobile_testing/ket_qua_whitebox/20260317_133106/screenshots/laptop_1280x800.png",
+      "checks": {
+        "layout": {
+          "docW": 1280,
+          "interactiveCount": 135,
+          "overflowPx": 0,
+          "smallTapCount": 51,
+          "viewportH": 661,
+          "viewportW": 1280,
+          "smallTapRatio": 0.3778
+        },
+        "logo": {
+          "found": true,
+          "distorted": true,
+          "reason": "object-fit: fill",
+          "hint": "Trường ĐH Tài nguyên và Môi trường Tp. HCM",
+          "rendered": "120.0x120.0",
+          "intrinsic": "120x120",
+          "rendered_ratio": 1.0,
+          "intrinsic_ratio": 1.0,
+          "baseline_ratio": 1.0,
+          "delta_intrinsic": 0.0,
+          "delta_baseline": 0.0
+        },
+        "mobile_menu": {
+          "checked": false,
+          "ok": true,
+          "reason": "skip on non-mobile"
+        },
+        "nav_link": {
+          "checked": true,
+          "ok": false,
+          "reason": "no visible nav/header link found"
+        }
+      },
+      "failures": [
+        "logo distortion: object-fit: fill",
+        "header/nav link interaction failed: no visible nav/header link found"
+      ],
+      "warnings": [
+        "small tap targets ratio 37.8% > 35.0%"
+      ]
+    },
+    {
+      "device_id": "laptop_l",
+      "name": "Laptop L (1440px)",
+      "group": "desktop",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "/Users/nguyenvantoan/dev/mobile_testing/ket_qua_whitebox/20260317_133106/screenshots/laptop_l_1440x900.png",
+      "checks": {
+        "layout": {
+          "docW": 1440,
+          "interactiveCount": 135,
+          "overflowPx": 0,
+          "smallTapCount": 51,
+          "viewportH": 761,
+          "viewportW": 1440,
+          "smallTapRatio": 0.3778
+        },
+        "logo": {
+          "found": true,
+          "distorted": true,
+          "reason": "object-fit: fill",
+          "hint": "Trường ĐH Tài nguyên và Môi trường Tp. HCM",
+          "rendered": "120.0x120.0",
+          "intrinsic": "120x120",
+          "rendered_ratio": 1.0,
+          "intrinsic_ratio": 1.0,
+          "baseline_ratio": 1.0,
+          "delta_intrinsic": 0.0,
+          "delta_baseline": 0.0
+        },
+        "mobile_menu": {
+          "checked": false,
+          "ok": true,
+          "reason": "skip on non-mobile"
+        },
+        "nav_link": {
+          "checked": true,
+          "ok": false,
+          "reason": "no visible nav/header link found"
+        }
+      },
+      "failures": [
+        "logo distortion: object-fit: fill",
+        "header/nav link interaction failed: no visible nav/header link found"
+      ],
+      "warnings": [
+        "small tap targets ratio 37.8% > 35.0%"
+      ]
+    },
+    {
+      "device_id": "desktop_hd",
+      "name": "Desktop HD (1920px)",
+      "group": "desktop",
+      "width": 1920,
+      "height": 1080,
+      "screenshot": "/Users/nguyenvantoan/dev/mobile_testing/ket_qua_whitebox/20260317_133106/screenshots/desktop_hd_1920x1080.png",
+      "checks": {
+        "layout": {
+          "docW": 1920,
+          "interactiveCount": 135,
+          "overflowPx": 0,
+          "smallTapCount": 51,
+          "viewportH": 941,
+          "viewportW": 1920,
+          "smallTapRatio": 0.3778
+        },
+        "logo": {
+          "found": true,
+          "distorted": true,
+          "reason": "object-fit: fill",
+          "hint": "Trường ĐH Tài nguyên và Môi trường Tp. HCM",
+          "rendered": "120.0x120.0",
+          "intrinsic": "120x120",
+          "rendered_ratio": 1.0,
+          "intrinsic_ratio": 1.0,
+          "baseline_ratio": 1.0,
+          "delta_intrinsic": 0.0,
+          "delta_baseline": 0.0
+        },
+        "mobile_menu": {
+          "checked": false,
+          "ok": true,
+          "reason": "skip on non-mobile"
+        },
+        "nav_link": {
+          "checked": true,
+          "ok": false,
+          "reason": "no visible nav/header link found"
+        }
+      },
+      "failures": [
+        "logo distortion: object-fit: fill",
+        "header/nav link interaction failed: no visible nav/header link found"
+      ],
+      "warnings": [
+        "small tap targets ratio 37.8% > 35.0%"
+      ]
+    },
+    {
+      "device_id": "desktop_2k",
+      "name": "Desktop 2K (2560px)",
+      "group": "desktop",
+      "width": 2560,
+      "height": 1440,
+      "screenshot": "/Users/nguyenvantoan/dev/mobile_testing/ket_qua_whitebox/20260317_133106/screenshots/desktop_2k_2560x1440.png",
+      "checks": {
+        "layout": {
+          "docW": 2560,
+          "interactiveCount": 135,
+          "overflowPx": 0,
+          "smallTapCount": 51,
+          "viewportH": 1301,
+          "viewportW": 2560,
+          "smallTapRatio": 0.3778
+        },
+        "logo": {
+          "found": true,
+          "distorted": true,
+          "reason": "object-fit: fill",
+          "hint": "Trường ĐH Tài nguyên và Môi trường Tp. HCM",
+          "rendered": "120.0x120.0",
+          "intrinsic": "120x120",
+          "rendered_ratio": 1.0,
+          "intrinsic_ratio": 1.0,
+          "baseline_ratio": 1.0,
+          "delta_intrinsic": 0.0,
+          "delta_baseline": 0.0
+        },
+        "mobile_menu": {
+          "checked": false,
+          "ok": true,
+          "reason": "skip on non-mobile"
+        },
+        "nav_link": {
+          "checked": true,
+          "ok": false,
+          "reason": "no visible nav/header link found"
+        }
+      },
+      "failures": [
+        "logo distortion: object-fit: fill",
+        "header/nav link interaction failed: no visible nav/header link found"
+      ],
+      "warnings": [
+        "small tap targets ratio 37.8% > 35.0%"
+      ]
+    },
+    {
+      "device_id": "mobile_xs",
+      "name": "Mobile XS (320px)",
+      "group": "mobile",
+      "width": 320,
+      "height": 568,
+      "screenshot": "/Users/nguyenvantoan/dev/mobile_testing/ket_qua_whitebox/20260317_133106/screenshots/mobile_xs_320x568.png",
+      "checks": {
+        "layout": {
+          "docW": 500,
+          "interactiveCount": 135,
+          "overflowPx": 0,
+          "smallTapCount": 71,
+          "viewportH": 429,
+          "viewportW": 500,
+          "smallTapRatio": 0.5259
+        },
+        "logo": {
+          "found": true,
+          "distorted": true,
+          "reason": "object-fit: fill",
+          "hint": "Trường ĐH Tài nguyên và Môi trường Tp. HCM",
+          "rendered": "120.0x120.0",
+          "intrinsic": "120x120",
+          "rendered_ratio": 1.0,
+          "intrinsic_ratio": 1.0,
+          "baseline_ratio": 1.0,
+          "delta_intrinsic": 0.0,
+          "delta_baseline": 0.0
+        },
+        "mobile_menu": {
+          "checked": true,
+          "ok": true,
+          "reason": "ok",
+          "expanded_before": "",
+          "expanded_after": "",
+          "nav_visible_before": 24,
+          "nav_visible_after": 24
+        },
+        "nav_link": {
+          "checked": true,
+          "ok": false,
+          "reason": "Message: invalid argument\n  (Session info: chrome=145.0.7632.160)\nStacktrace:\n0   chromedriver                        0x",
+          "target": "gioi-thieu"
+        }
+      },
+      "failures": [
+        "logo distortion: object-fit: fill",
+        "header/nav link interaction failed: Message: invalid argument\n  (Session info: chrome=145.0.7632.160)\nStacktrace:\n0   chromedriver                        0x"
+      ],
+      "warnings": [
+        "small tap targets ratio 52.6% > 35.0%"
+      ]
+    },
+    {
+      "device_id": "android_360",
+      "name": "Android S (360px)",
+      "group": "mobile",
+      "width": 360,
+      "height": 800,
+      "screenshot": "/Users/nguyenvantoan/dev/mobile_testing/ket_qua_whitebox/20260317_133106/screenshots/android_360_360x800.png",
+      "checks": {
+        "layout": {
+          "docW": 500,
+          "interactiveCount": 135,
+          "overflowPx": 0,
+          "smallTapCount": 71,
+          "viewportH": 661,
+          "viewportW": 500,
+          "smallTapRatio": 0.5259
+        },
+        "logo": {
+          "found": true,
+          "distorted": true,
+          "reason": "object-fit: fill",
+          "hint": "Trường ĐH Tài nguyên và Môi trường Tp. HCM",
+          "rendered": "120.0x120.0",
+          "intrinsic": "120x120",
+          "rendered_ratio": 1.0,
+          "intrinsic_ratio": 1.0,
+          "baseline_ratio": 1.0,
+          "delta_intrinsic": 0.0,
+          "delta_baseline": 0.0
+        },
+        "mobile_menu": {
+          "checked": true,
+          "ok": true,
+          "reason": "ok",
+          "expanded_before": "",
+          "expanded_after": "",
+          "nav_visible_before": 24,
+          "nav_visible_after": 24
+        },
+        "nav_link": {
+          "checked": true,
+          "ok": false,
+          "reason": "Message: invalid argument\n  (Session info: chrome=145.0.7632.160)\nStacktrace:\n0   chromedriver                        0x",
+          "target": "gioi-thieu"
+        }
+      },
+      "failures": [
+        "logo distortion: object-fit: fill",
+        "header/nav link interaction failed: Message: invalid argument\n  (Session info: chrome=145.0.7632.160)\nStacktrace:\n0   chromedriver                        0x"
+      ],
+      "warnings": [
+        "small tap targets ratio 52.6% > 35.0%"
+      ]
+    },
+    {
+      "device_id": "iphone_se",
+      "name": "iPhone SE (375px)",
+      "group": "mobile",
+      "width": 375,
+      "height": 667,
+      "screenshot": "/Users/nguyenvantoan/dev/mobile_testing/ket_qua_whitebox/20260317_133106/screenshots/iphone_se_375x667.png",
+      "checks": {
+        "layout": {
+          "docW": 500,
+          "interactiveCount": 135,
+          "overflowPx": 0,
+          "smallTapCount": 71,
+          "viewportH": 528,
+          "viewportW": 500,
+          "smallTapRatio": 0.5259
+        },
+        "logo": {
+          "found": true,
+          "distorted": true,
+          "reason": "object-fit: fill",
+          "hint": "Trường ĐH Tài nguyên và Môi trường Tp. HCM",
+          "rendered": "120.0x120.0",
+          "intrinsic": "120x120",
+          "rendered_ratio": 1.0,
+          "intrinsic_ratio": 1.0,
+          "baseline_ratio": 1.0,
+          "delta_intrinsic": 0.0,
+          "delta_baseline": 0.0
+        },
+        "mobile_menu": {
+          "checked": true,
+          "ok": true,
+          "reason": "ok",
+          "expanded_before": "",
+          "expanded_after": "",
+          "nav_visible_before": 24,
+          "nav_visible_after": 24
+        },
+        "nav_link": {
+          "checked": true,
+          "ok": false,
+          "reason": "Message: invalid argument\n  (Session info: chrome=145.0.7632.160)\nStacktrace:\n0   chromedriver                        0x",
+          "target": "gioi-thieu"
+        }
+      },
+      "failures": [
+        "logo distortion: object-fit: fill",
+        "header/nav link interaction failed: Message: invalid argument\n  (Session info: chrome=145.0.7632.160)\nStacktrace:\n0   chromedriver                        0x"
+      ],
+      "warnings": [
+        "small tap targets ratio 52.6% > 35.0%"
+      ]
+    },
+    {
+      "device_id": "iphone_14",
+      "name": "iPhone 14 Pro (393px)",
+      "group": "mobile",
+      "width": 393,
+      "height": 852,
+      "screenshot": "/Users/nguyenvantoan/dev/mobile_testing/ket_qua_whitebox/20260317_133106/screenshots/iphone_14_393x852.png",
+      "checks": {
+        "layout": {
+          "docW": 500,
+          "interactiveCount": 135,
+          "overflowPx": 0,
+          "smallTapCount": 71,
+          "viewportH": 713,
+          "viewportW": 500,
+          "smallTapRatio": 0.5259
+        },
+        "logo": {
+          "found": true,
+          "distorted": true,
+          "reason": "object-fit: fill",
+          "hint": "Trường ĐH Tài nguyên và Môi trường Tp. HCM",
+          "rendered": "120.0x120.0",
+          "intrinsic": "120x120",
+          "rendered_ratio": 1.0,
+          "intrinsic_ratio": 1.0,
+          "baseline_ratio": 1.0,
+          "delta_intrinsic": 0.0,
+          "delta_baseline": 0.0
+        },
+        "mobile_menu": {
+          "checked": true,
+          "ok": true,
+          "reason": "ok",
+          "expanded_before": "",
+          "expanded_after": "",
+          "nav_visible_before": 24,
+          "nav_visible_after": 24
+        },
+        "nav_link": {
+          "checked": true,
+          "ok": false,
+          "reason": "Message: invalid argument\n  (Session info: chrome=145.0.7632.160)\nStacktrace:\n0   chromedriver                        0x",
+          "target": "gioi-thieu"
+        }
+      },
+      "failures": [
+        "logo distortion: object-fit: fill",
+        "header/nav link interaction failed: Message: invalid argument\n  (Session info: chrome=145.0.7632.160)\nStacktrace:\n0   chromedriver                        0x"
+      ],
+      "warnings": [
+        "small tap targets ratio 52.6% > 35.0%"
+      ]
+    },
+    {
+      "device_id": "android_412",
+      "name": "Android L (412px)",
+      "group": "mobile",
+      "width": 412,
+      "height": 915,
+      "screenshot": "/Users/nguyenvantoan/dev/mobile_testing/ket_qua_whitebox/20260317_133106/screenshots/android_412_412x915.png",
+      "checks": {
+        "layout": {
+          "docW": 500,
+          "interactiveCount": 135,
+          "overflowPx": 0,
+          "smallTapCount": 71,
+          "viewportH": 776,
+          "viewportW": 500,
+          "smallTapRatio": 0.5259
+        },
+        "logo": {
+          "found": true,
+          "distorted": true,
+          "reason": "object-fit: fill",
+          "hint": "Trường ĐH Tài nguyên và Môi trường Tp. HCM",
+          "rendered": "120.0x120.0",
+          "intrinsic": "120x120",
+          "rendered_ratio": 1.0,
+          "intrinsic_ratio": 1.0,
+          "baseline_ratio": 1.0,
+          "delta_intrinsic": 0.0,
+          "delta_baseline": 0.0
+        },
+        "mobile_menu": {
+          "checked": true,
+          "ok": true,
+          "reason": "ok",
+          "expanded_before": "",
+          "expanded_after": "",
+          "nav_visible_before": 24,
+          "nav_visible_after": 24
+        },
+        "nav_link": {
+          "checked": true,
+          "ok": false,
+          "reason": "Message: invalid argument\n  (Session info: chrome=145.0.7632.160)\nStacktrace:\n0   chromedriver                        0x",
+          "target": "gioi-thieu"
+        }
+      },
+      "failures": [
+        "logo distortion: object-fit: fill",
+        "header/nav link interaction failed: Message: invalid argument\n  (Session info: chrome=145.0.7632.160)\nStacktrace:\n0   chromedriver                        0x"
+      ],
+      "warnings": [
+        "small tap targets ratio 52.6% > 35.0%"
+      ]
+    },
+    {
+      "device_id": "iphone_plus",
+      "name": "iPhone 14 Plus (428px)",
+      "group": "mobile",
+      "width": 428,
+      "height": 926,
+      "screenshot": "/Users/nguyenvantoan/dev/mobile_testing/ket_qua_whitebox/20260317_133106/screenshots/iphone_plus_428x926.png",
+      "checks": {
+        "layout": {
+          "docW": 500,
+          "interactiveCount": 135,
+          "overflowPx": 0,
+          "smallTapCount": 71,
+          "viewportH": 787,
+          "viewportW": 500,
+          "smallTapRatio": 0.5259
+        },
+        "logo": {
+          "found": true,
+          "distorted": true,
+          "reason": "object-fit: fill",
+          "hint": "Trường ĐH Tài nguyên và Môi trường Tp. HCM",
+          "rendered": "120.0x120.0",
+          "intrinsic": "120x120",
+          "rendered_ratio": 1.0,
+          "intrinsic_ratio": 1.0,
+          "baseline_ratio": 1.0,
+          "delta_intrinsic": 0.0,
+          "delta_baseline": 0.0
+        },
+        "mobile_menu": {
+          "checked": true,
+          "ok": true,
+          "reason": "ok",
+          "expanded_before": "",
+          "expanded_after": "",
+          "nav_visible_before": 24,
+          "nav_visible_after": 24
+        },
+        "nav_link": {
+          "checked": true,
+          "ok": false,
+          "reason": "Message: invalid argument\n  (Session info: chrome=145.0.7632.160)\nStacktrace:\n0   chromedriver                        0x",
+          "target": "gioi-thieu"
+        }
+      },
+      "failures": [
+        "logo distortion: object-fit: fill",
+        "header/nav link interaction failed: Message: invalid argument\n  (Session info: chrome=145.0.7632.160)\nStacktrace:\n0   chromedriver                        0x"
+      ],
+      "warnings": [
+        "small tap targets ratio 52.6% > 35.0%"
+      ]
+    },
+    {
+      "device_id": "android_480",
+      "name": "Android XL (480px)",
+      "group": "mobile",
+      "width": 480,
+      "height": 900,
+      "screenshot": "/Users/nguyenvantoan/dev/mobile_testing/ket_qua_whitebox/20260317_133106/screenshots/android_480_480x900.png",
+      "checks": {
+        "layout": {
+          "docW": 500,
+          "interactiveCount": 135,
+          "overflowPx": 0,
+          "smallTapCount": 71,
+          "viewportH": 761,
+          "viewportW": 500,
+          "smallTapRatio": 0.5259
+        },
+        "logo": {
+          "found": true,
+          "distorted": true,
+          "reason": "object-fit: fill",
+          "hint": "Trường ĐH Tài nguyên và Môi trường Tp. HCM",
+          "rendered": "120.0x120.0",
+          "intrinsic": "120x120",
+          "rendered_ratio": 1.0,
+          "intrinsic_ratio": 1.0,
+          "baseline_ratio": 1.0,
+          "delta_intrinsic": 0.0,
+          "delta_baseline": 0.0
+        },
+        "mobile_menu": {
+          "checked": true,
+          "ok": true,
+          "reason": "ok",
+          "expanded_before": "",
+          "expanded_after": "",
+          "nav_visible_before": 24,
+          "nav_visible_after": 24
+        },
+        "nav_link": {
+          "checked": true,
+          "ok": false,
+          "reason": "Message: invalid argument\n  (Session info: chrome=145.0.7632.160)\nStacktrace:\n0   chromedriver                        0x",
+          "target": "gioi-thieu"
+        }
+      },
+      "failures": [
+        "logo distortion: object-fit: fill",
+        "header/nav link interaction failed: Message: invalid argument\n  (Session info: chrome=145.0.7632.160)\nStacktrace:\n0   chromedriver                        0x"
+      ],
+      "warnings": [
+        "small tap targets ratio 52.6% > 35.0%"
+      ]
+    },
+    {
+      "device_id": "ipad_mini",
+      "name": "iPad Mini (744px)",
+      "group": "tablet",
+      "width": 744,
+      "height": 1133,
+      "screenshot": "/Users/nguyenvantoan/dev/mobile_testing/ket_qua_whitebox/20260317_133106/screenshots/ipad_mini_744x1133.png",
+      "checks": {
+        "layout": {
+          "docW": 744,
+          "interactiveCount": 135,
+          "overflowPx": 0,
+          "smallTapCount": 77,
+          "viewportH": 994,
+          "viewportW": 744,
+          "smallTapRatio": 0.5704
+        },
+        "logo": {
+          "found": true,
+          "distorted": true,
+          "reason": "object-fit: fill",
+          "hint": "Trường ĐH Tài nguyên và Môi trường Tp. HCM",
+          "rendered": "120.0x120.0",
+          "intrinsic": "120x120",
+          "rendered_ratio": 1.0,
+          "intrinsic_ratio": 1.0,
+          "baseline_ratio": 1.0,
+          "delta_intrinsic": 0.0,
+          "delta_baseline": 0.0
+        },
+        "mobile_menu": {
+          "checked": true,
+          "ok": true,
+          "reason": "ok",
+          "expanded_before": "",
+          "expanded_after": "",
+          "nav_visible_before": 24,
+          "nav_visible_after": 24
+        },
+        "nav_link": {
+          "checked": true,
+          "ok": false,
+          "reason": "Message: invalid argument\n  (Session info: chrome=145.0.7632.160)\nStacktrace:\n0   chromedriver                        0x",
+          "target": "gioi-thieu"
+        }
+      },
+      "failures": [
+        "logo distortion: object-fit: fill",
+        "header/nav link interaction failed: Message: invalid argument\n  (Session info: chrome=145.0.7632.160)\nStacktrace:\n0   chromedriver                        0x"
+      ],
+      "warnings": [
+        "small tap targets ratio 57.0% > 35.0%"
+      ]
+    },
+    {
+      "device_id": "tablet_768",
+      "name": "iPad / Tab (768px)",
+      "group": "tablet",
+      "width": 768,
+      "height": 1024,
+      "screenshot": "/Users/nguyenvantoan/dev/mobile_testing/ket_qua_whitebox/20260317_133106/screenshots/tablet_768_768x1024.png",
+      "checks": {
+        "layout": {
+          "docW": 768,
+          "interactiveCount": 135,
+          "overflowPx": 0,
+          "smallTapCount": 88,
+          "viewportH": 885,
+          "viewportW": 768,
+          "smallTapRatio": 0.6519
+        },
+        "logo": {
+          "found": true,
+          "distorted": true,
+          "reason": "object-fit: fill",
+          "hint": "Trường ĐH Tài nguyên và Môi trường Tp. HCM",
+          "rendered": "120.0x120.0",
+          "intrinsic": "120x120",
+          "rendered_ratio": 1.0,
+          "intrinsic_ratio": 1.0,
+          "baseline_ratio": 1.0,
+          "delta_intrinsic": 0.0,
+          "delta_baseline": 0.0
+        },
+        "mobile_menu": {
+          "checked": true,
+          "ok": true,
+          "reason": "ok",
+          "expanded_before": "",
+          "expanded_after": "",
+          "nav_visible_before": 24,
+          "nav_visible_after": 24
+        },
+        "nav_link": {
+          "checked": true,
+          "ok": false,
+          "reason": "Message: invalid argument\n  (Session info: chrome=145.0.7632.160)\nStacktrace:\n0   chromedriver                        0x",
+          "target": "gioi-thieu"
+        }
+      },
+      "failures": [
+        "logo distortion: object-fit: fill",
+        "header/nav link interaction failed: Message: invalid argument\n  (Session info: chrome=145.0.7632.160)\nStacktrace:\n0   chromedriver                        0x"
+      ],
+      "warnings": [
+        "small tap targets ratio 65.2% > 35.0%"
+      ]
+    },
+    {
+      "device_id": "android_tab",
+      "name": "Galaxy Tab (800px)",
+      "group": "tablet",
+      "width": 800,
+      "height": 1280,
+      "screenshot": "/Users/nguyenvantoan/dev/mobile_testing/ket_qua_whitebox/20260317_133106/screenshots/android_tab_800x1280.png",
+      "checks": {
+        "layout": {
+          "docW": 800,
+          "interactiveCount": 148,
+          "overflowPx": 0,
+          "smallTapCount": 54,
+          "viewportH": 1141,
+          "viewportW": 800,
+          "smallTapRatio": 0.3649
+        },
+        "logo": {
+          "found": true,
+          "distorted": true,
+          "reason": "object-fit: fill",
+          "hint": "Trường ĐH Tài nguyên và Môi trường Tp. HCM",
+          "rendered": "120.0x120.0",
+          "intrinsic": "120x120",
+          "rendered_ratio": 1.0,
+          "intrinsic_ratio": 1.0,
+          "baseline_ratio": 1.0,
+          "delta_intrinsic": 0.0,
+          "delta_baseline": 0.0
+        },
+        "mobile_menu": {
+          "checked": true,
+          "ok": true,
+          "reason": "ok",
+          "expanded_before": "",
+          "expanded_after": "",
+          "nav_visible_before": 24,
+          "nav_visible_after": 24
+        },
+        "nav_link": {
+          "checked": true,
+          "ok": false,
+          "reason": "Message: invalid argument\n  (Session info: chrome=145.0.7632.160)\nStacktrace:\n0   chromedriver                        0x",
+          "target": "gioi-thieu"
+        }
+      },
+      "failures": [
+        "logo distortion: object-fit: fill",
+        "header/nav link interaction failed: Message: invalid argument\n  (Session info: chrome=145.0.7632.160)\nStacktrace:\n0   chromedriver                        0x"
+      ],
+      "warnings": [
+        "small tap targets ratio 36.5% > 35.0%"
+      ]
+    },
+    {
+      "device_id": "ipad_air",
+      "name": "iPad Air (820px)",
+      "group": "tablet",
+      "width": 820,
+      "height": 1180,
+      "screenshot": "/Users/nguyenvantoan/dev/mobile_testing/ket_qua_whitebox/20260317_133106/screenshots/ipad_air_820x1180.png",
+      "checks": {
+        "layout": {
+          "docW": 820,
+          "interactiveCount": 148,
+          "overflowPx": 0,
+          "smallTapCount": 52,
+          "viewportH": 1041,
+          "viewportW": 820,
+          "smallTapRatio": 0.3514
+        },
+        "logo": {
+          "found": true,
+          "distorted": true,
+          "reason": "object-fit: fill",
+          "hint": "Trường ĐH Tài nguyên và Môi trường Tp. HCM",
+          "rendered": "120.0x120.0",
+          "intrinsic": "120x120",
+          "rendered_ratio": 1.0,
+          "intrinsic_ratio": 1.0,
+          "baseline_ratio": 1.0,
+          "delta_intrinsic": 0.0,
+          "delta_baseline": 0.0
+        },
+        "mobile_menu": {
+          "checked": true,
+          "ok": true,
+          "reason": "ok",
+          "expanded_before": "",
+          "expanded_after": "",
+          "nav_visible_before": 24,
+          "nav_visible_after": 24
+        },
+        "nav_link": {
+          "checked": true,
+          "ok": false,
+          "reason": "Message: invalid argument\n  (Session info: chrome=145.0.7632.160)\nStacktrace:\n0   chromedriver                        0x",
+          "target": "gioi-thieu"
+        }
+      },
+      "failures": [
+        "logo distortion: object-fit: fill",
+        "header/nav link interaction failed: Message: invalid argument\n  (Session info: chrome=145.0.7632.160)\nStacktrace:\n0   chromedriver                        0x"
+      ],
+      "warnings": [
+        "small tap targets ratio 35.1% > 35.0%"
+      ]
+    },
+    {
+      "device_id": "ipad_pro_11",
+      "name": "iPad Pro 11 (834px)",
+      "group": "tablet",
+      "width": 834,
+      "height": 1194,
+      "screenshot": "/Users/nguyenvantoan/dev/mobile_testing/ket_qua_whitebox/20260317_133106/screenshots/ipad_pro_11_834x1194.png",
+      "checks": {
+        "layout": {
+          "docW": 834,
+          "interactiveCount": 148,
+          "overflowPx": 0,
+          "smallTapCount": 53,
+          "viewportH": 1055,
+          "viewportW": 834,
+          "smallTapRatio": 0.3581
+        },
+        "logo": {
+          "found": true,
+          "distorted": true,
+          "reason": "object-fit: fill",
+          "hint": "Trường ĐH Tài nguyên và Môi trường Tp. HCM",
+          "rendered": "120.0x120.0",
+          "intrinsic": "120x120",
+          "rendered_ratio": 1.0,
+          "intrinsic_ratio": 1.0,
+          "baseline_ratio": 1.0,
+          "delta_intrinsic": 0.0,
+          "delta_baseline": 0.0
+        },
+        "mobile_menu": {
+          "checked": true,
+          "ok": true,
+          "reason": "ok",
+          "expanded_before": "",
+          "expanded_after": "",
+          "nav_visible_before": 24,
+          "nav_visible_after": 24
+        },
+        "nav_link": {
+          "checked": true,
+          "ok": false,
+          "reason": "Message: invalid argument\n  (Session info: chrome=145.0.7632.160)\nStacktrace:\n0   chromedriver                        0x",
+          "target": "gioi-thieu"
+        }
+      },
+      "failures": [
+        "logo distortion: object-fit: fill",
+        "header/nav link interaction failed: Message: invalid argument\n  (Session info: chrome=145.0.7632.160)\nStacktrace:\n0   chromedriver                        0x"
+      ],
+      "warnings": [
+        "small tap targets ratio 35.8% > 35.0%"
+      ]
+    },
+    {
+      "device_id": "surface_pro",
+      "name": "Surface Pro (912px)",
+      "group": "tablet",
+      "width": 912,
+      "height": 1368,
+      "screenshot": "/Users/nguyenvantoan/dev/mobile_testing/ket_qua_whitebox/20260317_133106/screenshots/surface_pro_912x1368.png",
+      "checks": {
+        "layout": {
+          "docW": 912,
+          "interactiveCount": 148,
+          "overflowPx": 0,
+          "smallTapCount": 55,
+          "viewportH": 1229,
+          "viewportW": 912,
+          "smallTapRatio": 0.3716
+        },
+        "logo": {
+          "found": true,
+          "distorted": true,
+          "reason": "object-fit: fill",
+          "hint": "Trường ĐH Tài nguyên và Môi trường Tp. HCM",
+          "rendered": "120.0x120.0",
+          "intrinsic": "120x120",
+          "rendered_ratio": 1.0,
+          "intrinsic_ratio": 1.0,
+          "baseline_ratio": 1.0,
+          "delta_intrinsic": 0.0,
+          "delta_baseline": 0.0
+        },
+        "mobile_menu": {
+          "checked": true,
+          "ok": true,
+          "reason": "ok",
+          "expanded_before": "",
+          "expanded_after": "",
+          "nav_visible_before": 24,
+          "nav_visible_after": 24
+        },
+        "nav_link": {
+          "checked": true,
+          "ok": false,
+          "reason": "Message: invalid argument\n  (Session info: chrome=145.0.7632.160)\nStacktrace:\n0   chromedriver                        0x",
+          "target": "gioi-thieu"
+        }
+      },
+      "failures": [
+        "logo distortion: object-fit: fill",
+        "header/nav link interaction failed: Message: invalid argument\n  (Session info: chrome=145.0.7632.160)\nStacktrace:\n0   chromedriver                        0x"
+      ],
+      "warnings": [
+        "small tap targets ratio 37.2% > 35.0%"
+      ]
+    },
+    {
+      "device_id": "ipad_pro_13",
+      "name": "iPad Pro 13 (1024px)",
+      "group": "tablet",
+      "width": 1024,
+      "height": 1366,
+      "screenshot": "/Users/nguyenvantoan/dev/mobile_testing/ket_qua_whitebox/20260317_133106/screenshots/ipad_pro_13_1024x1366.png",
+      "checks": {
+        "layout": {
+          "docW": 1024,
+          "interactiveCount": 147,
+          "overflowPx": 0,
+          "smallTapCount": 57,
+          "viewportH": 1227,
+          "viewportW": 1024,
+          "smallTapRatio": 0.3878
+        },
+        "logo": {
+          "found": true,
+          "distorted": true,
+          "reason": "object-fit: fill",
+          "hint": "Trường ĐH Tài nguyên và Môi trường Tp. HCM",
+          "rendered": "120.0x120.0",
+          "intrinsic": "120x120",
+          "rendered_ratio": 1.0,
+          "intrinsic_ratio": 1.0,
+          "baseline_ratio": 1.0,
+          "delta_intrinsic": 0.0,
+          "delta_baseline": 0.0
+        },
+        "mobile_menu": {
+          "checked": false,
+          "ok": true,
+          "reason": "skip on non-mobile"
+        },
+        "nav_link": {
+          "checked": true,
+          "ok": false,
+          "reason": "Message: invalid argument\n  (Session info: chrome=145.0.7632.160)\nStacktrace:\n0   chromedriver                        0x",
+          "target": "gioi-thieu"
+        }
+      },
+      "failures": [
+        "logo distortion: object-fit: fill",
+        "header/nav link interaction failed: Message: invalid argument\n  (Session info: chrome=145.0.7632.160)\nStacktrace:\n0   chromedriver                        0x"
+      ],
+      "warnings": [
+        "small tap targets ratio 38.8% > 35.0%"
+      ]
+    }
+  ]
+}

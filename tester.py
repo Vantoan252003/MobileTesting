@@ -19,6 +19,15 @@ from selenium.common.exceptions import (
 )
 
 
+DEFAULT_LOGO_SELECTOR = os.environ.get(
+    "LOGO_SELECTOR",
+    "img[alt*='logo' i], img[class*='logo' i], [id*='logo' i] img, .logo img",
+)
+LOGO_INTRINSIC_TOLERANCE = 0.025
+LOGO_BASELINE_TOLERANCE = 0.035
+LOGO_UPSCALE_WARN = 1.4
+
+
 # ─────────────────────────────────────────────────────────────
 # Driver
 # ─────────────────────────────────────────────────────────────
@@ -53,6 +62,182 @@ def _load_page(driver, url: str, log_fn):
     except TimeoutException:
         log_fn("  Cảnh báo: Trang tải quá 20 giây")
     time.sleep(1.5)  # đợi JS / animation hoàn tất
+
+
+def _collect_logo_candidates(driver, selector: str = DEFAULT_LOGO_SELECTOR) -> list:
+    """Lấy các ứng viên logo khả kiến, có điểm ưu tiên để chọn logo chính."""
+    js = """
+        const customSelector = arguments[0];
+        const selectors = [
+            customSelector,
+            "header img",
+            "nav img",
+            ".navbar img",
+            ".navbar-brand img",
+            "a[class*='logo' i] img",
+            "img[src*='logo' i]",
+            "img[alt*='school' i]",
+            "img[alt*='truong' i]",
+            "svg[class*='logo' i], [id*='logo' i] svg",
+        ];
+        const nodes = [];
+        const seen = new Set();
+
+        for (const sel of selectors) {
+            let found = [];
+            try {
+                found = Array.from(document.querySelectorAll(sel));
+            } catch (e) {
+                found = [];
+            }
+            for (const el of found) {
+                if (seen.has(el)) continue;
+                seen.add(el);
+                nodes.push(el);
+            }
+        }
+
+        const out = [];
+        for (const el of nodes) {
+            const rect = el.getBoundingClientRect();
+            const style = window.getComputedStyle(el);
+            const visible = rect.width > 8 && rect.height > 8 && style.display !== 'none' && style.visibility !== 'hidden';
+            if (!visible) continue;
+
+            const tag = (el.tagName || '').toLowerCase();
+            const id = (el.id || '').toLowerCase();
+            const cls = (el.className || '').toString().toLowerCase();
+            const src = tag === 'img' ? ((el.currentSrc || el.src || '').toLowerCase()) : '';
+            const alt = tag === 'img' ? ((el.alt || '').toLowerCase()) : '';
+            const hintText = `${id} ${cls} ${src} ${alt}`;
+
+            let intrinsicW = 0;
+            let intrinsicH = 0;
+            if (tag === 'img') {
+                intrinsicW = Number(el.naturalWidth || 0);
+                intrinsicH = Number(el.naturalHeight || 0);
+            } else if (tag === 'svg') {
+                const vb = (el.getAttribute('viewBox') || '').trim().split(/\s+/);
+                if (vb.length === 4) {
+                    intrinsicW = Number(vb[2] || 0);
+                    intrinsicH = Number(vb[3] || 0);
+                }
+            }
+
+            let score = 0;
+            if (hintText.includes('logo')) score += 8;
+            if (hintText.includes('brand')) score += 2;
+            if (rect.top < 220) score += 4;
+            const area = rect.width * rect.height;
+            score += Math.min(6, area / 3500);
+            if (area < 300) score -= 5;
+
+            out.push({
+                tag,
+                score,
+                top: rect.top,
+                area,
+                id: (el.id || '').slice(0, 60),
+                className: (el.className || '').toString().slice(0, 100),
+                src: (el.currentSrc || el.src || '').slice(0, 220),
+                alt: (el.alt || '').slice(0, 80),
+                objectFit: style.objectFit || '',
+                renderedW: rect.width,
+                renderedH: rect.height,
+                intrinsicW,
+                intrinsicH,
+            });
+        }
+
+        out.sort((a, b) => (b.score - a.score) || (b.area - a.area) || (a.top - b.top));
+        return out;
+    """
+    return driver.execute_script(js, selector) or []
+
+
+def _inspect_logo_responsiveness(driver, baseline_ratio: float = None, selector: str = DEFAULT_LOGO_SELECTOR) -> dict:
+    """Phát hiện logo méo bằng so sánh tỷ lệ intrinsic và baseline desktop."""
+    candidates = _collect_logo_candidates(driver, selector)
+    if not candidates:
+        return {
+            "selector": selector,
+            "checked": 0,
+            "found": False,
+            "distorted": 0,
+            "blur_risk": 0,
+            "reasons": ["Không tìm thấy logo bằng selector hiện tại"],
+            "issues": [],
+            "baseline_candidate_ratio": None,
+        }
+
+    primary = candidates[0]
+    rendered_w = float(primary.get("renderedW") or 0)
+    rendered_h = float(primary.get("renderedH") or 0)
+    intrinsic_w = float(primary.get("intrinsicW") or 0)
+    intrinsic_h = float(primary.get("intrinsicH") or 0)
+    rendered_ratio = rendered_w / max(rendered_h, 1e-6)
+    intrinsic_ratio = None
+    if intrinsic_w > 0 and intrinsic_h > 0:
+        intrinsic_ratio = intrinsic_w / intrinsic_h
+
+    reasons = []
+    issues = []
+    distorted = 0
+    blur_risk = 0
+    delta_intrinsic = None
+    delta_baseline = None
+
+    if intrinsic_ratio:
+        delta_intrinsic = abs(rendered_ratio - intrinsic_ratio) / max(intrinsic_ratio, 1e-6)
+        if delta_intrinsic > LOGO_INTRINSIC_TOLERANCE:
+            distorted = 1
+            reasons.append(
+                f"Lệch so với tỷ lệ ảnh gốc {round(delta_intrinsic * 100, 2)}%"
+            )
+
+        upscale_ratio = max(rendered_w / max(intrinsic_w, 1e-6), rendered_h / max(intrinsic_h, 1e-6))
+        if upscale_ratio > LOGO_UPSCALE_WARN:
+            blur_risk = 1
+            reasons.append(f"Logo bị upscale {round(upscale_ratio, 2)}x, có nguy cơ mờ")
+
+    if baseline_ratio and baseline_ratio > 0:
+        delta_baseline = abs(rendered_ratio - baseline_ratio) / baseline_ratio
+        if delta_baseline > LOGO_BASELINE_TOLERANCE and distorted == 0:
+            distorted = 1
+            reasons.append(
+                f"Lệch so với baseline logo {round(delta_baseline * 100, 2)}%"
+            )
+
+    if str(primary.get("objectFit") or "").strip().lower() == "fill":
+        distorted = max(distorted, 1)
+        reasons.append("object-fit: fill có thể gây méo ảnh")
+
+    if distorted:
+        issues.append({
+            "hint": primary.get("alt") or primary.get("id") or primary.get("className") or primary.get("src") or "logo",
+            "rendered": f"{round(rendered_w, 1)}x{round(rendered_h, 1)}",
+            "intrinsic": f"{int(intrinsic_w)}x{int(intrinsic_h)}" if intrinsic_ratio else "unknown",
+            "delta_intrinsic_pct": round((delta_intrinsic or 0) * 100, 2),
+            "delta_baseline_pct": round((delta_baseline or 0) * 100, 2),
+            "object_fit": primary.get("objectFit") or "",
+        })
+
+    baseline_candidate_ratio = intrinsic_ratio or rendered_ratio
+    return {
+        "selector": selector,
+        "checked": len(candidates),
+        "found": True,
+        "distorted": distorted,
+        "blur_risk": blur_risk,
+        "reasons": reasons,
+        "issues": issues,
+        "chosen": {
+            "hint": primary.get("alt") or primary.get("id") or primary.get("className") or primary.get("src") or "logo",
+            "rendered": f"{round(rendered_w, 1)}x{round(rendered_h, 1)}",
+            "intrinsic": f"{int(intrinsic_w)}x{int(intrinsic_h)}" if intrinsic_ratio else "unknown",
+        },
+        "baseline_candidate_ratio": baseline_candidate_ratio,
+    }
 
 
 # ─────────────────────────────────────────────────────────────
@@ -234,6 +419,7 @@ def test_interactions(url: str, viewports: list, output_dir: str, log_fn=print) 
 
     os.makedirs(output_dir, exist_ok=True)
     all_results = []
+    logo_baseline_ratio = None
 
     for vp in viewports:
         w, h   = vp["width"], vp["height"]
@@ -253,6 +439,7 @@ def test_interactions(url: str, viewports: list, output_dir: str, log_fn=print) 
             "height":   h,
             "elements": [],
             "summary":  {},
+            "logo_check": {},
             "screenshot_b64": "",
         }
 
@@ -312,14 +499,29 @@ def test_interactions(url: str, viewports: list, output_dir: str, log_fn=print) 
                 el_results.append({**info, "click_result": click_result, "tap_ok": tap_ok})
 
             vp_result["elements"] = el_results
+            logo_check = _inspect_logo_responsiveness(driver, baseline_ratio=logo_baseline_ratio)
+            vp_result["logo_check"] = logo_check
+
+            candidate_ratio = logo_check.get("baseline_candidate_ratio")
+            if candidate_ratio and (logo_baseline_ratio is None or (group == "desktop" and logo_check.get("distorted", 0) == 0)):
+                logo_baseline_ratio = candidate_ratio
+
             vp_result["summary"] = {
                 "total":      len(elements),
                 "tap_issues": warn_count,
                 "click_ok":   ok_count,
                 "click_err":  err_count,
+                "logo_checked": logo_check.get("checked", 0),
+                "logo_found": 1 if logo_check.get("found") else 0,
+                "logo_distorted": logo_check.get("distorted", 0),
+                "logo_blur_risk": logo_check.get("blur_risk", 0),
             }
 
-            log_fn(f"  Tap issues: {warn_count} | Click OK: {ok_count} | Lỗi: {err_count}")
+            log_fn(
+                f"  Tap issues: {warn_count} | Click OK: {ok_count} | Lỗi: {err_count}"
+                f" | Logo méo: {logo_check.get('distorted', 0)}"
+                f" | Logo tìm thấy: {logo_check.get('checked', 0)}"
+            )
 
         except Exception as e:
             log_fn(f"  Lỗi: {e}")
@@ -429,6 +631,19 @@ def generate_report(url: str, screenshots: list, interactions: list, output_dir:
         click_ok = sm.get("click_ok", 0)
         click_err = sm.get("click_err", 0)
         total = sm.get("total", 0)
+        logo_checked = sm.get("logo_checked", 0)
+        logo_found = sm.get("logo_found", 0)
+        logo_distorted = sm.get("logo_distorted", 0)
+        logo_blur_risk = sm.get("logo_blur_risk", 0)
+        logo_check = vp.get("logo_check", {})
+
+        logo_reason_html = ""
+        if not logo_found:
+            logo_reason_html = '<div class="card-copy">Logo check: chưa tìm thấy phần tử logo. Có thể cần chỉnh selector bằng biến môi trường LOGO_SELECTOR.</div>'
+        elif logo_distorted:
+            reasons = logo_check.get("reasons", []) or ["Có dấu hiệu logo bị méo"]
+            reason_items = "".join([f"<li>{esc(reason)}</li>" for reason in reasons])
+            logo_reason_html = f'<div class="card-copy"><strong>Logo cảnh báo:</strong><ul style="padding-left:18px">{reason_items}</ul></div>'
 
         rows = ""
         for el in vp.get("elements", []):
@@ -473,9 +688,12 @@ def generate_report(url: str, screenshots: list, interactions: list, output_dir:
               <span class="stat {'stat-warn' if tap_issues else ''}">Tap issues: {tap_issues}</span>
               <span class="stat {'stat-ok' if click_ok else ''}">Click OK: {click_ok}</span>
               <span class="stat {'stat-err' if click_err else ''}">Lỗi: {click_err}</span>
+                            <span class="stat {'stat-err' if logo_distorted else 'stat-ok' if logo_found else 'stat-warn'}">Logo méo: {logo_distorted}</span>
+                            <span class="stat {'stat-warn' if logo_blur_risk else ''}">Logo blur risk: {logo_blur_risk}</span>
             </div>
           </div>
           <div class="card-copy">Ảnh chụp ban đầu và bảng kết quả click/tap để người dùng lọc theo từng nhóm thiết bị.</div>
+                    {logo_reason_html}
           {build_image_panel(vp.get('screenshot_b64', ''), title, 'interaction', group, device_key, vp['width'], vp['height'])}
                     <div class="detail-actions-row">
                         <button class="ghost-btn ghost-btn-detail js-open-detail" type="button">Xem chi tiết tương tác</button>
@@ -491,6 +709,7 @@ def generate_report(url: str, screenshots: list, interactions: list, output_dir:
                                     <span class="stat {'stat-warn' if tap_issues else ''}">Tap issues: {tap_issues}</span>
                                     <span class="stat {'stat-ok' if click_ok else ''}">Click OK: {click_ok}</span>
                                     <span class="stat {'stat-err' if click_err else ''}">Lỗi: {click_err}</span>
+                                    <span class="stat {'stat-err' if logo_distorted else 'stat-ok' if logo_found else 'stat-warn'}">Logo méo: {logo_distorted}</span>
                                 </div>
                             </div>
                             <div class="detail-table-wrap">
